@@ -1,0 +1,20 @@
+.item {
+	width: 48px;
+	height: 48px;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background-color: azure;
+}
+
+.active-item {
+	cursor: pointer;
+	border-right: var(--border);
+	border-bottom: var(--border);
+}
+
+.premium-item {
+	background-color: var(--premium);
+}

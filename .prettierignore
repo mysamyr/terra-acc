@@ -1,0 +1,7 @@
+**/*.json
+node_modules
+/public
+/build
+.env
+.env.example
+.gitignore

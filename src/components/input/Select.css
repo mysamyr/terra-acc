@@ -1,0 +1,10 @@
+.select {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: 50%;
+}
+
+.select input {
+	height: 30px;
+}
