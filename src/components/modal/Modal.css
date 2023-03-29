@@ -1,0 +1,71 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 500px;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #94bfa2;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px grey;
+    transform: translate(-50%, -50%);
+}
+
+.element-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    margin: 5px 0;
+}
+.element-icon {
+    height: 48px;
+}
+
+.recipes {
+    display: flex;
+    justify-content: space-between;
+}
+.recipe {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 10%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+table {
+    border-collapse: collapse;
+}
+
+h1 {
+    margin: 20px 0;
+}
+h3 {
+    margin: 5px;
+}
+pre {
+    margin: 5px;
+    font-size: 16px;
+    font-family: "Open Sans", serif;
+}
