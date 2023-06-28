@@ -1,4 +1,4 @@
-const acces = require("./store.json");
+const accessories = require("./store.json");
 const fs = require("fs");
 
 const objToArr = (obj) => Object.values(obj);
@@ -15,7 +15,7 @@ const sort = (arr) => {
   return arrayToObj(sortedArr);
 };
 
-const array = objToArr(acces);
+const array = objToArr(accessories);
 const newItems = [
   {
     id: "flying_carpet",
@@ -166,4 +166,4 @@ console.log(res);
 
 // todo add another page with wings
 
-// fs.writeFileSync("./store2.json", JSON.stringify(res));
+fs.writeFileSync("./store2.json", JSON.stringify(res));

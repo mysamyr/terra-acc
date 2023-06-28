@@ -1,11 +1,21 @@
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 import Board from "../board/Board";
+import NavBar from "../navbar/NavBar";
+import AddAccessory from "../add/AddAccessory";
 
 import './App.css';
 
-const App = () => {
-  return (<>
-    <Board/>
+const App = () => (<>
+    <NavBar/>
+    <Routes>
+      <Route path="/new" element={<AddAccessory />}>
+        new
+      </Route>
+      <Route path="/" element={<Board/>} />
+    </ Routes>
   </>);
-};
 
 export default App;

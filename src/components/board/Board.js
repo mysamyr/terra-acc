@@ -1,9 +1,9 @@
 import {useCallback, useState} from "react";
 import {SOURCE, TYPES} from "../../constants";
-import accessories from "../../store/store.json";
+import accessories from "../../store/store2.json";
 import Item from "../item/Item";
 import Modal from "../modal/Modal";
-import {makeKey} from "../../helper";
+import { makeKey } from "../../helper";
 
 import './Board.css';
 
@@ -31,7 +31,6 @@ const Board = () => {
 
   return (
     <div className="container">
-      <h1>Terraria accessories</h1>
       <div className="items">{cards}</div>
       {showModal && <Modal
         item={activeItem}

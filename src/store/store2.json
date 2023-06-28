@@ -1,0 +1,2892 @@
+{
+  "adhesive_bandage": {
+    "id": "adhesive_bandage",
+    "name": "Adhesive Bandage",
+    "path": "adhesive_bandage.png",
+    "used_in": [
+      "medicated_bandage"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "bezoar"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Bleeding",
+    "obtain": "Angler Fish, Rusty Armored Bones, Werewolf"
+  },
+  "aglet": {
+    "id": "aglet",
+    "name": "Aglet",
+    "path": "aglet.png",
+    "used_in": [
+      "lightning_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "5% increased movement speed",
+    "obtain": "Chest, Pearlwood Crate, Wooden Crate"
+  },
+  "amber_horseshoe_balloon": {
+    "id": "amber_horseshoe_balloon",
+    "name": "Amber Horseshoe Balloon",
+    "path": "amber_horseshoe_balloon.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "honey_balloon",
+          "lucky_horseshoe"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Releases bees and douses the user in honey when damaged\nIncreases jump height and negates fall damage",
+    "obtain": ""
+  },
+  "amphibian_boots": {
+    "id": "amphibian_boots",
+    "name": "Amphibian Boots",
+    "path": "amphibian_boots.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "sailfish_boots",
+          "frog_leg"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "The wearer can run super fast\nIncreases jump speed and allows auto-jump\nIncreases fall resistance",
+    "obtain": ""
+  },
+  "ankh_charm": {
+    "id": "ankh_charm",
+    "name": "Ankh Charm",
+    "path": "ankh_charm.png",
+    "used_in": [
+      "ankh_shield"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "armor_bracing",
+          "medicated_bandage",
+          "the_plan",
+          "countercurse_mantra",
+          "reflective_shades"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants immunity to most debuffs",
+    "obtain": ""
+  },
+  "ankh_shield": {
+    "id": "ankh_shield",
+    "name": "Ankh Shield",
+    "path": "ankh_shield.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "obsidian_shield",
+          "ankh_charm"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants immunity to knockback and fire blocks\nGrants immunity to most debuffs",
+    "obtain": ""
+  },
+  "anklet_of_the_wind": {
+    "id": "anklet_of_the_wind",
+    "name": "Anklet of the Wind",
+    "path": "anklet_of_the_wind.png",
+    "used_in": [
+      "lightning_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "10% increased movement speed",
+    "obtain": "Bramble Crate, Ivy Chest, Jungle Crate"
+  },
+  "anvil": {
+    "id": "anvil",
+    "name": "Anvil",
+    "path": "anvil.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": ""
+  },
+  "arcane_flower": {
+    "id": "arcane_flower",
+    "name": "Arcane Flower",
+    "path": "arcane_flower.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "mana_flower",
+          "putrid_scent"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "8% reduced mana usage\nAutomatically use mana potions when needed\nEnemies are less likely to target you",
+    "obtain": ""
+  },
+  "arctic_diving_gear": {
+    "id": "arctic_diving_gear",
+    "name": "Arctic Diving Gear",
+    "path": "arctic_diving_gear.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "jellyfish_diving_gear",
+          "ice_skates"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants the ability to swim and greatly extends underwater breathing\nProvides extra mobility on ice\nGenerates a very subtle glow which becomes more vibrant underwater",
+    "obtain": ""
+  },
+  "armor_bracing": {
+    "id": "armor_bracing",
+    "name": "Armor Bracing",
+    "path": "armor_bracing.png",
+    "used_in": [
+      "ankh_charm"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "armor_polish",
+          "vitamins"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Weakness and Broken Armor",
+    "obtain": ""
+  },
+  "armor_polish": {
+    "id": "armor_polish",
+    "name": "Armor Polish",
+    "path": "armor_polish.png",
+    "used_in": [
+      "armor_bracing"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "vitamins"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Broken Armor",
+    "obtain": "Armored Skeleton, Blue Armored Bones"
+  },
+  "avenger_emblem": {
+    "id": "avenger_emblem",
+    "name": "Avenger Emblem",
+    "path": "avenger_emblem.png",
+    "used_in": [
+      "celestial_emblem",
+      "destroyer_emblem",
+      "mechanical_glove"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "ranger_emblem",
+          "soul_of_might",
+          "soul_of_sight",
+          "soul_of_fright"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "sorcerer_emblem",
+          "soul_of_might",
+          "soul_of_sight",
+          "soul_of_fright"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "summoner_emblem",
+          "soul_of_might",
+          "soul_of_sight",
+          "soul_of_fright"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "warrior_emblem",
+          "soul_of_might",
+          "soul_of_sight",
+          "soul_of_fright"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "12% increased damage",
+    "obtain": ""
+  },
+  "balloon_pufferfish": {
+    "id": "balloon_pufferfish",
+    "name": "Balloon Pufferfish",
+    "path": "balloon_pufferfish.png",
+    "used_in": [
+      "sharkron_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "shiny_red_balloon"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases jump height",
+    "obtain": "Fishing in any biome"
+  },
+  "band_of_regeneration": {
+    "id": "band_of_regeneration",
+    "name": "Band of Regeneration",
+    "path": "band_of_regeneration.png",
+    "used_in": [
+      "charm_of_myths",
+      "mana_regeneration_band"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Slowly regenerates life",
+    "obtain": "Gold Chests in the Underground and Cavern layers"
+  },
+  "band_of_starpower": {
+    "id": "band_of_starpower",
+    "name": "Band of Starpower",
+    "path": "band_of_starpower.png",
+    "used_in": [
+      "mana_regeneration_band"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "panic_necklace",
+          "mana_crystal"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases maximum mana by 20",
+    "obtain": "Corrupt Crate, Defiled Crate, Shadow Orb"
+  },
+  "bee_cloak": {
+    "id": "bee_cloak",
+    "name": "Bee Cloak",
+    "path": "bee_cloak.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "honey_comb",
+          "star_cloak"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Causes stars to fall, releases bees and douses the user in honey when damaged",
+    "obtain": ""
+  },
+  "berserker's_glove": {
+    "id": "berserker's_glove",
+    "name": "Berserker's Glove",
+    "path": "berserker's_glove.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "power_glove",
+          "flesh_knuckles"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases melee knockback\n12% increased melee speed\nEnables auto swing for melee weapons\nIncreases the size of melee weapons\nEnemies are more likely to target you",
+    "obtain": ""
+  },
+  "bezoar": {
+    "id": "bezoar",
+    "name": "Bezoar",
+    "path": "bezoar.png",
+    "used_in": [
+      "medicated_bandage"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "adhesive_bandage"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Poison",
+    "obtain": "Hornet, Moss Hornet, Toxic Sludge"
+  },
+  "black_belt": {
+    "id": "black_belt",
+    "name": "Black Belt",
+    "path": "black_belt.png",
+    "used_in": [
+      "master_ninja_gear"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Gives a chance to dodge attacks",
+    "obtain": "Bone Lee"
+  },
+  "blindfold": {
+    "id": "blindfold",
+    "name": "Blindfold",
+    "path": "blindfold.png",
+    "used_in": [
+      "reflective_shades"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "pocket_mirror"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Darkness",
+    "obtain": "Corrupt Slime, Crimslime, Blood Mummy, Dark Mummy, Slimeling"
+  },
+  "blizzard_in_a_balloon": {
+    "id": "blizzard_in_a_balloon",
+    "name": "Blizzard in a Balloon",
+    "path": "blizzard_in_a_balloon.png",
+    "used_in": [
+      "bundle_of_balloons",
+      "bundle_of_horseshoe_balloons",
+      "white_horseshoe_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "blizzard_in_a_bottle",
+          "shiny_red_balloon"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height",
+    "obtain": ""
+  },
+  "blizzard_in_a_bottle": {
+    "id": "blizzard_in_a_bottle",
+    "name": "Blizzard in a Bottle",
+    "path": "blizzard_in_a_bottle.png",
+    "used_in": [
+      "blizzard_in_a_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "cloud_in_a_bottle",
+          "frost_core"
+        ],
+        "station": "crystal_ball"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump",
+    "obtain": "Boreal Crate, Frozen Chest, Frozen Crate"
+  },
+  "blue_horseshoe_balloon": {
+    "id": "blue_horseshoe_balloon",
+    "name": "Blue Horseshoe Balloon",
+    "path": "blue_horseshoe_balloon.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "cloud_in_a_balloon",
+          "lucky_horseshoe"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height and negates fall damage",
+    "obtain": ""
+  },
+  "bundle_of_balloons": {
+    "id": "bundle_of_balloons",
+    "name": "Bundle of Balloons",
+    "path": "bundle_of_balloons.png",
+    "used_in": [
+      "bundle_of_horseshoe_balloons"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "cloud_in_a_balloon",
+          "blizzard_in_a_balloon",
+          "sandstorm_in_a_balloon"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to quadruple jump\nIncreases jump height",
+    "obtain": ""
+  },
+  "bundle_of_horseshoe_balloons": {
+    "id": "bundle_of_horseshoe_balloons",
+    "name": "Bundle of Horseshoe Balloons",
+    "path": "bundle_of_horseshoe_balloons.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "cloud_in_a_balloon",
+          "blizzard_in_a_balloon",
+          "sandstorm_in_a_balloon",
+          "lucky_horseshoe"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "bundle_of_balloons",
+          "lucky_horseshoe"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to quadruple jump\nIncreases jump height and negates fall damage",
+    "obtain": ""
+  },
+  "celestial_cuffs": {
+    "id": "celestial_cuffs",
+    "name": "Celestial Cuffs",
+    "path": "celestial_cuffs.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "celestial_magnet",
+          "magic_cuffs"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases pickup range for mana stars\nRestores mana when damaged\nIncreases maximum mana by 20",
+    "obtain": ""
+  },
+  "celestial_emblem": {
+    "id": "celestial_emblem",
+    "name": "Celestial Emblem",
+    "path": "celestial_emblem.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "celestial_magnet",
+          "avenger_emblem"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases pickup range for mana stars\n15% increased magic damage",
+    "obtain": ""
+  },
+  "celestial_magnet": {
+    "id": "celestial_magnet",
+    "name": "Celestial Magnet",
+    "path": "celestial_magnet.png",
+    "used_in": [
+      "celestial_cuffs",
+      "celestial_emblem",
+      "magnet_flower"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases pickup range for mana stars",
+    "obtain": "Purchase from the Traveling Merchant for 15 gold"
+  },
+  "celestial_shell": {
+    "id": "celestial_shell",
+    "name": "Celestial Shell",
+    "path": "celestial_shell.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "celestial_stone",
+          "moon_shell"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Turns the holder into a werewolf at night and a merfolk when entering water\nMinor increase to damage, melee speed, critical strike chance,\nlife regeneration, defense, mining speed, and minion knockback",
+    "obtain": ""
+  },
+  "celestial_stone": {
+    "id": "celestial_stone",
+    "name": "Celestial Stone",
+    "path": "celestial_stone.png",
+    "used_in": [
+      "celestial_shell"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "moon_stone",
+          "sun_stone"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Minor increase to damage, melee speed, critical strike chance,\nlife regeneration, defense, mining speed, and minion knockback",
+    "obtain": ""
+  },
+  "charm_of_myths": {
+    "id": "charm_of_myths",
+    "name": "Charm of Myths",
+    "path": "charm_of_myths.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "band_of_regeneration",
+          "philosopher's_stone"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Provides life regeneration and reduces the cooldown of healing potions by 25%",
+    "obtain": ""
+  },
+  "climbing_claws": {
+    "id": "climbing_claws",
+    "name": "Climbing Claws",
+    "path": "climbing_claws.png",
+    "used_in": [
+      "tiger_climbing_gear"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Allows the ability to slide down walls\nImproved ability if combined with Shoe Spikes",
+    "obtain": "Chest, Pearlwood Crate, Wooden Crate"
+  },
+  "cloud_in_a_balloon": {
+    "id": "cloud_in_a_balloon",
+    "name": "Cloud in a Balloon",
+    "path": "cloud_in_a_balloon.png",
+    "used_in": [
+      "bundle_of_balloons",
+      "bundle_of_horseshoe_balloons",
+      "blue_horseshoe_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "cloud_in_a_bottle",
+          "shiny_red_balloon"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "station": "tinkerer's_workshop",
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height",
+    "obtain": ""
+  },
+  "cloud_in_a_bottle": {
+    "id": "cloud_in_a_bottle",
+    "name": "Cloud in a Bottle",
+    "path": "cloud_in_a_bottle.png",
+    "used_in": [
+      "blizzard_in_a_bottle",
+      "sandstorm_in_a_bottle",
+      "cloud_in_a_balloon",
+      "fart_in_a_jar"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Allows the holder to double jump",
+    "obtain": "Gold Chests in Underground and Cavern layers"
+  },
+  "cobalt_shield": {
+    "id": "cobalt_shield",
+    "name": "Cobalt Shield",
+    "path": "cobalt_shield.png",
+    "used_in": [
+      "obsidian_shield"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Grants immunity to knockback",
+    "obtain": "Gold Chests found in the Dungeon, Golden Lock Boxes from Dungeon Crates"
+  },
+  "countercurse_mantra": {
+    "id": "countercurse_mantra",
+    "name": "Countercurse Mantra",
+    "path": "countercurse_mantra.png",
+    "used_in": [
+      "ankh_charm"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "megaphone",
+          "nazar"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Silence and Curse",
+    "obtain": ""
+  },
+  "crimtane_bar": {
+    "id": "crimtane_bar",
+    "name": "Crimtane Bar",
+    "path": "crimtane_bar.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": ""
+  },
+  "cross_necklace": {
+    "id": "cross_necklace",
+    "name": "Cross Necklace",
+    "path": "cross_necklace.png",
+    "used_in": [
+      "star_veil"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases length of invincibility after taking damage",
+    "obtain": "Mimic"
+  },
+  "crystal_ball": {
+    "id": "crystal_ball",
+    "name": "Crystal Ball",
+    "path": "crystal_ball.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": ""
+  },
+  "demonite_bar": {
+    "id": "demonite_bar",
+    "name": "Demonite Bar",
+    "path": "demonite_bar.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": ""
+  },
+  "destroyer_emblem": {
+    "id": "destroyer_emblem",
+    "name": "Destroyer Emblem",
+    "path": "destroyer_emblem.png",
+    "used_in": [
+      "sniper_scope"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "avenger_emblem",
+          "eye_of_the_golem"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "10% increased damage\n8% increased critical strike chance",
+    "obtain": ""
+  },
+  "diving_gear": {
+    "id": "diving_gear",
+    "name": "Diving Gear",
+    "path": "diving_gear.png",
+    "used_in": [
+      "jellyfish_diving_gear"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "flipper",
+          "diving_helmet"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants the ability to swim\nGreatly extends underwater breathing",
+    "obtain": ""
+  },
+  "diving_helmet": {
+    "id": "diving_helmet",
+    "name": "Diving Helmet",
+    "path": "diving_helmet.png",
+    "used_in": [
+      "diving_gear"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Greatly extends underwater breathing",
+    "obtain": "Shark"
+  },
+  "dunerider_boots": {
+    "id": "dunerider_boots",
+    "name": "Dunerider Boots",
+    "path": "dunerider_boots.png",
+    "used_in": [
+      "spectre_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "The wearer can run super fast, and even faster on sand\n'Walk without rhythm and you won't attract the worm'",
+    "obtain": "Mirage Crate, Oasis Crate, Sandstone Chest"
+  },
+  "eye_of_the_golem": {
+    "id": "eye_of_the_golem",
+    "name": "Eye of the Golem",
+    "path": "eye_of_the_golem.png",
+    "used_in": [
+      "destroyer_emblem"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "10% increased critical strike chance",
+    "obtain": "Golem"
+  },
+  "fairy_boots": {
+    "id": "fairy_boots",
+    "name": "Fairy Boots",
+    "path": "fairy_boots.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "spectre_boots",
+          "flower_boots"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows flight\nThe wearer can run super fast\nFlowers grow on the grass you walk on",
+    "obtain": ""
+  },
+  "fart_in_a_balloon": {
+    "id": "fart_in_a_balloon",
+    "name": "Fart in a Balloon",
+    "path": "fart_in_a_balloon.png",
+    "used_in": [
+      "green_horseshoe_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "fart_in_a_jar",
+          "shiny_red_balloon"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height",
+    "obtain": ""
+  },
+  "fart_in_a_jar": {
+    "id": "fart_in_a_jar",
+    "name": "Fart in a Jar",
+    "path": "fart_in_a_jar.png",
+    "used_in": [
+      "fart_in_a_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "cloud_in_a_bottle",
+          "whoopie_cushion"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump",
+    "obtain": ""
+  },
+  "fast_clock": {
+    "id": "fast_clock",
+    "name": "Fast Clock",
+    "path": "fast_clock.png",
+    "used_in": [
+      "the_plan"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "trifold_map"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Slow",
+    "obtain": "Mummy, Pixie, Wraith"
+  },
+  "feral_claws": {
+    "id": "feral_claws",
+    "name": "Feral Claws",
+    "path": "feral_claws.png",
+    "used_in": [
+      "power_glove"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "12% increased melee speed\nEnables auto swing for melee weapons",
+    "obtain": "Jungle Crates, Bramble Crates, and Ivy Chests"
+  },
+  "fire_gauntlet": {
+    "id": "fire_gauntlet",
+    "name": "Fire Gauntlet",
+    "path": "fire_gauntlet.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "magma_stone",
+          "mechanical_glove"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases melee knockback and melee attacks inflict fire damage\n12% increased melee damage and speed\nEnables auto swing for melee weapons\nIncreases the size of melee weapons",
+    "obtain": ""
+  },
+  "flame_waker_boots": {
+    "id": "flame_waker_boots",
+    "name": "Flame Waker Boots",
+    "path": "flame_waker_boots.png",
+    "used_in": [
+      "hellfire_treads"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "'Never get cold feet again'",
+    "obtain": "Hellstone Crate, Obsidian Crate"
+  },
+  "flesh_knuckles": {
+    "id": "flesh_knuckles",
+    "name": "Flesh Knuckles",
+    "path": "flesh_knuckles.png",
+    "used_in": [
+      "berserker's_glove",
+      "hero_shield"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Enemies are more likely to target you",
+    "obtain": "Crimson Mimic"
+  },
+  "flipper": {
+    "id": "flipper",
+    "name": "Flipper",
+    "path": "flipper.png",
+    "used_in": [
+      "diving_gear",
+      "frog_flipper",
+      "frog_gear"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Grants the ability to swim",
+    "obtain": "Ocean Crate, Seaside Crate, Water Chest"
+  },
+  "flower_boots": {
+    "id": "flower_boots",
+    "name": "Flower Boots",
+    "path": "flower_boots.png",
+    "used_in": [
+      "fairy_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Flowers grow on the grass you walk on",
+    "obtain": "Bramble Crate, Ivy Chest, Jungle Crate"
+  },
+  "flurry_boots": {
+    "id": "flurry_boots",
+    "name": "Flurry Boots",
+    "path": "flurry_boots.png",
+    "used_in": [
+      "spectre_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "The wearer can run super fast",
+    "obtain": "Boreal Crate, Frozen Chest, Frozen Crate"
+  },
+  "flying_carpet": {
+    "id": "flying_carpet",
+    "name": "Flying Carpet",
+    "path": "flying_carpet.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "pharaoh's_robe"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the owner to float for a few seconds",
+    "obtain": "Pyramid's Chest"
+  },
+  "forbidden_fragment": {
+    "id": "forbidden_fragment",
+    "name": "Forbidden Fragment",
+    "path": "forbidden_fragment.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Sand Elemental during a Sandstorm in the Desert"
+  },
+  "frog_flipper": {
+    "id": "frog_flipper",
+    "name": "Frog Flipper",
+    "path": "frog_flipper.png",
+    "used_in": [
+      "frog_gear"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "frog_leg",
+          "flipper"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants the ability to swim\nIncreases jump speed and allows auto-jump\nIncreases fall resistance",
+    "obtain": ""
+  },
+  "frog_gear": {
+    "id": "frog_gear",
+    "name": "Frog Gear",
+    "path": "frog_gear.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "frog_webbing",
+          "flipper"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "frog_flipper",
+          "tiger_climbing_gear"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants the ability to swim\nAllows the ability to climb walls\nIncreases jump speed and allows auto-jump\nIncreases fall resistance\n'It ain't easy being green'",
+    "obtain": ""
+  },
+  "frog_leg": {
+    "id": "frog_leg",
+    "name": "Frog Leg",
+    "path": "frog_leg.png",
+    "used_in": [
+      "amphibian_boots",
+      "frog_flipper",
+      "frog_webbing"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases jump speed and allows auto-jump\nIncreases fall resistance",
+    "obtain": "Fishing in any biome"
+  },
+  "frog_webbing": {
+    "id": "frog_webbing",
+    "name": "Frog Webbing",
+    "path": "frog_webbing.png",
+    "used_in": [
+      "frog_gear"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "frog_leg",
+          "tiger_climbing_gear"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the ability to climb walls\nIncreases jump speed and allows auto-jump\nIncreases fall resistance",
+    "obtain": ""
+  },
+  "frost_core": {
+    "id": "frost_core",
+    "name": "Frost Core",
+    "path": "frost_core.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Ice Golem during Blizzards in the Snow biome"
+  },
+  "frostspark_boots": {
+    "id": "frostspark_boots",
+    "name": "Frostspark Boots",
+    "path": "frostspark_boots.png",
+    "used_in": [
+      "terraspark_boots"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "lightning_boots",
+          "ice_skates"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows flight, super fast running, and extra mobility on ice\n8% increased movement speed",
+    "obtain": ""
+  },
+  "frozen_shield": {
+    "id": "frozen_shield",
+    "name": "Frozen Shield",
+    "path": "frozen_shield.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "paladin's_shield",
+          "frozen_turtle_shell"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants immunity to knockback\nPuts a shell around the owner when below 50% life that reduces damage by 25%\nAbsorbs 25% of damage done to players on your team when above 25% life\nGives 6 Defense points",
+    "obtain": ""
+  },
+  "frozen_turtle_shell": {
+    "id": "frozen_turtle_shell",
+    "name": "Frozen Turtle Shell",
+    "path": "frozen_turtle_shell.png",
+    "used_in": [
+      "frozen_shield"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Puts a shell around the owner when below 50% life that reduces damage by 25%",
+    "obtain": "Ice Tortoise"
+  },
+  "furnace": {
+    "id": "furnace",
+    "name": "Furnace",
+    "path": "furnace.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": ""
+  },
+  "green_horseshoe_balloon": {
+    "id": "green_horseshoe_balloon",
+    "name": "Green Horseshoe Balloon",
+    "path": "green_horseshoe_balloon.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "fart_in_a_balloon",
+          "lucky_horseshoe"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height and negates fall damage",
+    "obtain": ""
+  },
+  "hellfire_treads": {
+    "id": "hellfire_treads",
+    "name": "Hellfire Treads",
+    "path": "hellfire_treads.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "flame_waker_boots",
+          "spectre_boots"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows flight\nThe wearer can run super fast\nLeaves a trail of flames in your wake",
+    "obtain": ""
+  },
+  "hercules_beetle": {
+    "id": "hercules_beetle",
+    "name": "Hercules Beetle",
+    "path": "hercules_beetle.png",
+    "used_in": [
+      "papyrus_scarab"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases summon damage by 15%\nIncreases the knockback of your minions",
+    "obtain": "Mourning Wood"
+  },
+  "hermes_boots": {
+    "id": "hermes_boots",
+    "name": "Hermes Boots",
+    "path": "hermes_boots.png",
+    "used_in": [
+      "spectre_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "The wearer can run super fast",
+    "obtain": "Chests in the Underground and Cavern layers"
+  },
+  "hero_shield": {
+    "id": "hero_shield",
+    "name": "Hero Shield",
+    "path": "hero_shield.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "paladin's_shield",
+          "flesh_knuckles"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants immunity to knockback\nAbsorbs 25% of damage done to players on your team when above 25% life\nEnemies are more likely to target you",
+    "obtain": ""
+  },
+  "honey_balloon": {
+    "id": "honey_balloon",
+    "name": "Honey Balloon",
+    "path": "honey_balloon.png",
+    "used_in": [
+      "amber_horseshoe_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "shiny_red_balloon",
+          "honey_comb"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases jump height\nReleases bees and douses the user in honey when damaged",
+    "obtain": ""
+  },
+  "honey_comb": {
+    "id": "honey_comb",
+    "name": "Honey Comb",
+    "path": "honey_comb.png",
+    "used_in": [
+      "bee_cloak",
+      "honey_balloon",
+      "stinger_necklace",
+      "sweetheart_necklace"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Releases bees and douses the user in honey when damaged",
+    "obtain": "Queen Bee"
+  },
+  "ice_skates": {
+    "id": "ice_skates",
+    "name": "Ice Skates",
+    "path": "ice_skates.png",
+    "used_in": [
+      "arctic_diving_gear",
+      "frostspark_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Provides extra mobility on ice\nIce will not break when you fall on it",
+    "obtain": "Boreal Crate, Frozen Chest, Frozen Crate"
+  },
+  "inner_tube": {
+    "id": "inner_tube",
+    "name": "Inner Tube",
+    "path": "inner_tube.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "A",
+    "effect": "Grants the ability to float in water",
+    "obtain": "Ocean Crate, Seaside Crate, Water Chest"
+  },
+  "jellyfish_diving_gear": {
+    "id": "jellyfish_diving_gear",
+    "name": "Jellyfish Diving Gear",
+    "path": "jellyfish_diving_gear.png",
+    "used_in": [
+      "arctic_diving_gear"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "diving_gear",
+          "jellyfish_necklace"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants the ability to swim and greatly extends underwater breathing\nGenerates a very subtle glow which becomes more vibrant underwater",
+    "obtain": ""
+  },
+  "jellyfish_necklace": {
+    "id": "jellyfish_necklace",
+    "name": "Jellyfish Necklace",
+    "path": "jellyfish_necklace.png",
+    "used_in": [
+      "jellyfish_diving_gear"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Generates a very subtle glow which becomes more vibrant underwater",
+    "obtain": "Blue Jellyfish, Green Jellyfish, Pink Jellyfish"
+  },
+  "lava_charm": {
+    "id": "lava_charm",
+    "name": "Lava Charm",
+    "path": "lava_charm.png",
+    "used_in": [
+      "lava_waders",
+      "magma_skull",
+      "molten_charm",
+      "molten_skull_rose"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "magma_stone"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Provides 7 seconds of immunity to lava",
+    "obtain": "Chests in Caverns with lava, Hellstone Crate, Obsidian Crate"
+  },
+  "lava_waders": {
+    "id": "lava_waders",
+    "name": "Lava Waders",
+    "path": "lava_waders.png",
+    "used_in": [
+      "terraspark_boots"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "obsidian_water_walking_boots",
+          "lava_charm",
+          "obsidian_rose"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "molten_charm",
+          "obsidian_water_walking_boots",
+          "obsidian_rose"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "molten_charm",
+          "water_walking_boots",
+          "obsidian_rose"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "molten_skull_rose",
+          "water_walking_boots"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "molten_skull_rose",
+          "obsidian_water_walking_boots"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Provides the ability to walk on water, honey & lava\nGrants immunity to fire blocks and 7 seconds of immunity to lava\nReduces damage from touching lava",
+    "obtain": ""
+  },
+  "life_crystal": {
+    "id": "life_crystal",
+    "name": "Life Crystal",
+    "path": "life_crystal.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "Increases maximum mana by 20",
+    "obtain": "Any area in the Underground layer and below, Golden Crate, Titanium Crate"
+  },
+  "lightning_boots": {
+    "id": "lightning_boots",
+    "name": "Lightning Boots",
+    "path": "lightning_boots.png",
+    "used_in": [
+      "frostspark_boots"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "spectre_boots",
+          "anklet_of_the_wind",
+          "aglet"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows flight, super fast running\n8% increased movement speed",
+    "obtain": ""
+  },
+  "lucky_horseshoe": {
+    "id": "lucky_horseshoe",
+    "name": "Amber Horseshoe Balloon",
+    "path": "lucky_horseshoe.png",
+    "used_in": [
+      "amber_horseshoe_balloon",
+      "blue_horseshoe_balloon",
+      "bundle_of_horseshoe_balloons",
+      "green_horseshoe_balloon",
+      "obsidian_horseshoe",
+      "pink_horseshoe_balloon",
+      "white_horseshoe_balloon",
+      "yellow_horseshoe_balloon"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Negates fall damage\n'Said to bring good fortune and keep evil spirits at bay'",
+    "obtain": "Sky Crate, Skyware Chest"
+  },
+  "magic_cuffs": {
+    "id": "magic_cuffs",
+    "name": "Magic Cuffs",
+    "path": "magic_cuffs.png",
+    "used_in": [
+      "celestial_cuffs"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "mana_regeneration_band",
+          "shackle"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases maximum mana by 20\nRestores mana when damaged",
+    "obtain": ""
+  },
+  "magic_quiver": {
+    "id": "magic_quiver",
+    "name": "Magic Quiver",
+    "path": "magic_quiver.png",
+    "used_in": [
+      "molten_quiver",
+      "stalker's_quiver"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases arrow damage by 10% and greatly increases arrow speed\n20% chance to not consume arrows",
+    "obtain": "Skeleton Archer in Hardmode"
+  },
+  "magiluminescence": {
+    "id": "magiluminescence",
+    "name": "Magiluminescence",
+    "path": "magiluminescence.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "crimtane_bar",
+          "topaz"
+        ],
+        "station": "anvil"
+      },
+      {
+        "ingredients": [
+          "demonite_bar",
+          "topaz"
+        ],
+        "station": "anvil"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases movement speed and acceleration\nProvides light when worn\n'A brief light in my dark life.'",
+    "obtain": ""
+  },
+  "magma_skull": {
+    "id": "magma_skull",
+    "name": "Magma Skull",
+    "path": "magma_skull.png",
+    "used_in": [
+      "molten_skull_rose"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "obsidian_skull",
+          "lava_charm"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Melee attacks inflict fire damage\nGrants immunity to fire blocks",
+    "obtain": ""
+  },
+  "magma_stone": {
+    "id": "magma_stone",
+    "name": "Magma Stone",
+    "path": "magma_stone.png",
+    "used_in": [
+      "molten_quiver",
+      "fire_gauntlet"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "lava_charm"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Melee attacks inflict fire damage",
+    "obtain": "Hellbat, Lava Bat"
+  },
+  "magnet_flower": {
+    "id": "magnet_flower",
+    "name": "Magnet Flower",
+    "path": "magnet_flower.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "mana_flower",
+          "celestial_magnet"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "8% reduced mana usage\nAutomatically use mana potions when needed\nIncreases pickup range for mana stars",
+    "obtain": ""
+  },
+  "mana_cloak": {
+    "id": "mana_cloak",
+    "name": "Mana Cloak",
+    "path": "mana_cloak.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "mana_flower",
+          "star_cloak"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "8% reduced mana usage\nAutomatically use mana potions when needed\nCauses stars to fall after taking damage\nStars restore mana when collected",
+    "obtain": ""
+  },
+  "mana_crystal": {
+    "id": "mana_crystal",
+    "name": "Mana Crystal",
+    "path": "mana_crystal.png",
+    "used_in": [
+      "band_of_starpower"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "fallen_star"
+        ],
+        "station": "no_station"
+      }
+    ],
+    "type": "I",
+    "effect": "Permanently increases maximum mana by 20",
+    "obtain": "Mimic"
+  },
+  "mana_flower": {
+    "id": "mana_flower",
+    "name": "Mana Flower",
+    "path": "mana_flower.png",
+    "used_in": [
+      "arcane_flower",
+      "magnet_flower",
+      "mana_cloak"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "nature's_gift",
+          "mana_potion"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "8% reduced mana usage\nAutomatically use mana potions when needed",
+    "obtain": ""
+  },
+  "mana_potion": {
+    "id": "mana_potion",
+    "name": "Mana Potion",
+    "path": "mana_potion.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Craft, Any Crates except the Wooden and Pearlwood Crates"
+  },
+  "mana_regeneration_band": {
+    "id": "mana_regeneration_band",
+    "name": "Mana Regeneration Band",
+    "path": "mana_regeneration_band.png",
+    "used_in": [
+      "magic_cuffs"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "band_of_starpower",
+          "band_of_regeneration"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases maximum mana by 20\nIncreases mana regeneration rate",
+    "obtain": ""
+  },
+  "master_ninja_gear": {
+    "id": "master_ninja_gear",
+    "name": "Master Ninja Gear",
+    "path": "master_ninja_gear.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "tiger_climbing_gear",
+          "tabi",
+          "black_belt"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the ability to climb walls and dash\nGives a chance to dodge attacks",
+    "obtain": ""
+  },
+  "mechanical_glove": {
+    "id": "mechanical_glove",
+    "name": "Mechanical Glove",
+    "path": "mechanical_glove.png",
+    "used_in": [
+      "fire_gauntlet"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "power_glove",
+          "avenger_emblem"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases melee knockback\n12% increased melee damage and speed\nEnables auto swing for melee weapons\nIncreases the size of melee weapons",
+    "obtain": ""
+  },
+  "medicated_bandage": {
+    "id": "medicated_bandage",
+    "name": "Medicated Bandage",
+    "path": "medicated_bandage.png",
+    "used_in": [
+      "ankh_charm"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "bezoar",
+          "adhesive_bandage"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Poison and Bleeding",
+    "obtain": ""
+  },
+  "megaphone": {
+    "id": "megaphone",
+    "name": "Megaphone",
+    "path": "megaphone.png",
+    "used_in": [
+      "countercurse_mantra"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "nazar"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Silence",
+    "obtain": "Green Jellyfish, Blood Mummy, Dark Mummy, Pixie"
+  },
+  "molten_charm": {
+    "id": "molten_charm",
+    "name": "Molten Charm",
+    "path": "molten_charm.png",
+    "used_in": [
+      "lava_waders"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "lava_charm",
+          "obsidian_skull"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants immunity to fire blocks\nProvides 7 seconds of immunity to lava",
+    "obtain": ""
+  },
+  "molten_quiver": {
+    "id": "molten_quiver",
+    "name": "Molten Quiver",
+    "path": "molten_quiver.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "magic_quiver",
+          "magma_stone"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases arrow damage by 10% and greatly increases arrow speed\n20% chance not to consume arrows\nLights wooden arrows ablaze\n'Quiver in fear!'",
+    "obtain": ""
+  },
+  "molten_skull_rose": {
+    "id": "molten_skull_rose",
+    "name": "Molten Skull Rose",
+    "path": "molten_skull_rose.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "obsidian_skull_rose",
+          "lava_charm"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "magma_skull",
+          "obsidian_rose"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "magma_skull",
+          "obsidian_skull_rose"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Melee attacks inflict fire damage\nGrants immunity to fire blocks\nReduces damage from touching lava",
+    "obtain": ""
+  },
+  "moon_charm": {
+    "id": "moon_charm",
+    "name": "Moon Charm",
+    "path": "moon_charm.png",
+    "used_in": [
+      "moon_shell"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Turns the holder into a werewolf at night",
+    "obtain": "Werewolf"
+  },
+  "moon_shell": {
+    "id": "moon_shell",
+    "name": "Moon Shell",
+    "path": "moon_shell.png",
+    "used_in": [
+      "celestial_shell"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "moon_charm",
+          "neptune's_shell"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Turns the holder into a werewolf at night and a merfolk when entering water",
+    "obtain": ""
+  },
+  "moon_stone": {
+    "id": "moon_stone",
+    "name": "Moon Stone",
+    "path": "moon_stone.png",
+    "used_in": [
+      "celestial_stone"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "If worn during the night, grants minor increase to damage, melee speed, critical strike chance,\nlife regeneration, defense, mining speed, and minion knockback",
+    "obtain": "Vampire"
+  },
+  "nature's_gift": {
+    "id": "nature's_gift",
+    "name": "Nature's Gift",
+    "path": "nature's_gift.png",
+    "used_in": [
+      "mana_flower"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "6% reduced mana usage",
+    "obtain": "Harvesting a rare flower that grows on Jungle grass in the Underground Jungle"
+  },
+  "nazar": {
+    "id": "nazar",
+    "name": "Nazar",
+    "path": "nazar.png",
+    "used_in": [
+      "countercurse_mantra"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "megaphone"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Curse",
+    "obtain": "Crimson Axe, Cursed Hammer, Cursed Skull, Enchanted Sword, Giant Cursed Skull"
+  },
+  "necromantic_scroll": {
+    "id": "necromantic_scroll",
+    "name": "Necromantic Scroll",
+    "path": "necromantic_scroll.png",
+    "used_in": [
+      "papyrus_scarab"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases your max number of minions by 1\nIncreases minion damage by 10%",
+    "obtain": "Mourning Wood"
+  },
+  "neptune's_shell": {
+    "id": "neptune's_shell",
+    "name": "Neptune's Shell",
+    "path": "neptune's_shell.png",
+    "used_in": [
+      "moon_shell"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Transforms the holder into merfolk when entering water",
+    "obtain": "Creature from the Deep"
+  },
+  "no_station": {
+    "id": "no_station",
+    "name": "By Hand",
+    "path": "404.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": ""
+  },
+  "obsidian": {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "path": "obsidian.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Mining when Water and Lava collide"
+  },
+  "obsidian_horseshoe": {
+    "id": "obsidian_horseshoe",
+    "name": "Obsidian Horseshoe",
+    "path": "obsidian_horseshoe.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "lucky_horseshoe",
+          "obsidian_skull"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Negates fall damage\nGrants immunity to fire blocks",
+    "obtain": ""
+  },
+  "obsidian_rose": {
+    "id": "obsidian_rose",
+    "name": "Obsidian Rose",
+    "path": "obsidian_rose.png",
+    "used_in": [
+      "lava_waders",
+      "molten_skull_rose",
+      "obsidian_skull_rose"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Reduces damage from touching lava",
+    "obtain": "Fire Imp"
+  },
+  "obsidian_shield": {
+    "id": "obsidian_shield",
+    "name": "Obsidian Shield",
+    "path": "obsidian_shield.png",
+    "used_in": [
+      "ankh_shield"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "cobalt_shield",
+          "obsidian_skull"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants immunity to knockback\nGrants immunity to fire blocks",
+    "obtain": ""
+  },
+  "obsidian_skull": {
+    "id": "obsidian_skull",
+    "name": "Obsidian Skull",
+    "path": "obsidian_skull.png",
+    "used_in": [
+      "magma_skull",
+      "molten_charm",
+      "obsidian_horseshoe",
+      "obsidian_shield",
+      "obsidian_skull_rose",
+      "obsidian_water_walking_boots"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "obsidian"
+        ],
+        "station": "furnace"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants immunity to fire blocks",
+    "obtain": ""
+  },
+  "obsidian_skull_rose": {
+    "id": "obsidian_skull_rose",
+    "name": "Obsidian Skull Rose",
+    "path": "obsidian_skull_rose.png",
+    "used_in": [
+      "molten_skull_rose"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "obsidian_skull",
+          "obsidian_rose"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Grants immunity to fire blocks\nReduces damage from touching lava",
+    "obtain": ""
+  },
+  "obsidian_water_walking_boots": {
+    "id": "obsidian_water_walking_boots",
+    "name": "Obsidian Water Walking Boots",
+    "path": "obsidian_water_walking_boots.png",
+    "used_in": [
+      "lava_waders"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "water_walking_boots",
+          "obsidian_skull"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Provides the ability to walk on water & honey\nGrants immunity to fire blocks",
+    "obtain": ""
+  },
+  "paladin's_shield": {
+    "id": "paladin's_shield",
+    "name": "Paladin's Shield",
+    "path": "paladin's_shield.png",
+    "used_in": [
+      "hero_shield",
+      "frozen_shield"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Absorbs 25% of damage done to players on your team when above 25% life\nGrants immunity to knockback\nGives 6 Defense points",
+    "obtain": "Paladin"
+  },
+  "panic_necklace": {
+    "id": "panic_necklace",
+    "name": "Panic Necklace",
+    "path": "panic_necklace.png",
+    "used_in": [
+      "sweetheart_necklace"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "band_of_starpower",
+          "life_crystal"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases movement speed after taking damage",
+    "obtain": "Crimson Crate, Crimson Heart, Hematic Crate"
+  },
+  "papyrus_scarab": {
+    "id": "papyrus_scarab",
+    "name": "Papyrus Scarab",
+    "path": "papyrus_scarab.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "necromantic_scroll",
+          "hercules_beetle"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases your max number of minions by 1\nIncreases the damage and knockback of your minions",
+    "obtain": ""
+  },
+  "pharaoh's_mask": {
+    "id": "pharaoh's_mask",
+    "name": "Pharaoh's Mask",
+    "path": "pharaoh's_mask.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Pyramids Chest"
+  },
+  "pharaoh's_robe": {
+    "id": "pharaoh's_robe",
+    "name": "Pharaoh's Robe",
+    "path": "pharaoh's_robe.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Pyramids Chest"
+  },
+  "philosopher's_stone": {
+    "id": "philosopher's_stone",
+    "name": "Philosopher's Stone",
+    "path": "philosopher's_stone.png",
+    "used_in": [
+      "charm_of_myths"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Reduces the cooldown of healing potions by 25%",
+    "obtain": "Mimic"
+  },
+  "pink_horseshoe_balloon": {
+    "id": "pink_horseshoe_balloon",
+    "name": "Pink Horseshoe Balloon",
+    "path": "pink_horseshoe_balloon.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "sharkron_balloon",
+          "lucky_horseshoe"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height and negates fall damage",
+    "obtain": ""
+  },
+  "pocket_mirror": {
+    "id": "pocket_mirror",
+    "name": "Pocket Mirror",
+    "path": "pocket_mirror.png",
+    "used_in": [
+      "reflective_shades"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "blindfold"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to petrification",
+    "obtain": "Medusa"
+  },
+  "power_glove": {
+    "id": "power_glove",
+    "name": "Power Glove",
+    "path": "power_glove.png",
+    "used_in": [
+      "berserker's_glove",
+      "mechanical_glove"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "titan_glove",
+          "feral_claws"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases melee knockback\n12% increased melee speed\nEnables auto swing for melee weapons\nIncreases the size of melee weapons",
+    "obtain": ""
+  },
+  "putrid_scent": {
+    "id": "putrid_scent",
+    "name": "Putrid Scent",
+    "path": "putrid_scent.png",
+    "used_in": [
+      "arcane_flower",
+      "recon_scope",
+      "stalker's_quiver"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Enemies are less likely to target you\n5% increased damage and critical strike chance",
+    "obtain": "Corrupt Mimic"
+  },
+  "pygmy_necklace": {
+    "id": "pygmy_necklace",
+    "name": "Pygmy Necklace",
+    "path": "pygmy_necklace.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases your max number of minions by 1",
+    "obtain": "Purchase from the Witch Doctor for 20 gold at night"
+  },
+  "ranger_emblem": {
+    "id": "ranger_emblem",
+    "name": "Ranger Emblem",
+    "path": "ranger_emblem.png",
+    "used_in": [
+      "avenger_emblem"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "warrior_emblem"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "15% increased ranged damage",
+    "obtain": "Wall of Flesh"
+  },
+  "recon_scope": {
+    "id": "recon_scope",
+    "name": "Recon Scope",
+    "path": "recon_scope.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "sniper_scope",
+          "putrid_scent"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases view range for guns (Right click to zoom out)\n10% increased ranged damage and critical strike chance\nEnemies are less likely to target you\n'Enemy spotted'",
+    "obtain": ""
+  },
+  "reflective_shades": {
+    "id": "reflective_shades",
+    "name": "Reflective Shades",
+    "path": "reflective_shades.png",
+    "used_in": [
+      "ankh_charm"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "blindfold",
+          "pocket_mirror"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Darkness and Petrification",
+    "obtain": ""
+  },
+  "rifle_scope": {
+    "id": "rifle_scope",
+    "name": "Rifle Scope",
+    "path": "rifle_scope.png",
+    "used_in": [
+      "sniper_scope"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases view range for guns\nRight click to zoom out",
+    "obtain": "Skeleton Sniper in post-Plantera Dungeon"
+  },
+  "rocket_boots": {
+    "id": "rocket_boots",
+    "name": "Rocket Boots",
+    "path": "rocket_boots.png",
+    "used_in": [
+      "spectre_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Allows flight",
+    "obtain": "Purchase from the Goblin Tinkerer for 5 gold"
+  },
+  "sailfish_boots": {
+    "id": "sailfish_boots",
+    "name": "Sailfish Boots",
+    "path": "sailfish_boots.png",
+    "used_in": [
+      "amphibian_boots",
+      "spectre_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "The wearer can run super fast",
+    "obtain": "Iron Crate, Mythril Crate, Pearlwood Crate, Wooden Crate"
+  },
+  "sandstorm_in_a_balloon": {
+    "id": "sandstorm_in_a_balloon",
+    "name": "Sandstorm in a Balloon",
+    "path": "sandstorm_in_a_balloon.png",
+    "used_in": [
+      "bundle_of_balloons",
+      "bundle_of_horseshoe_balloons",
+      "yellow_horseshoe_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "sandstorm_in_a_bottle",
+          "shiny_red_balloon"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height",
+    "obtain": ""
+  },
+  "sandstorm_in_a_bottle": {
+    "id": "sandstorm_in_a_bottle",
+    "name": "Sandstorm in a Bottle",
+    "path": "sandstorm_in_a_bottle.png",
+    "used_in": [
+      "sandstorm_in_a_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "cloud_in_a_bottle",
+          "forbidden_fragment"
+        ],
+        "station": "crystal_ball"
+      },
+      {
+        "ingredients": [
+          "pharaoh's_mask"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to do an improved double jump",
+    "obtain": "Pyramids Chest, Oasis Crate, Mirage Crate"
+  },
+  "shackle": {
+    "id": "shackle",
+    "name": "Shackle",
+    "path": "shackle.png",
+    "used_in": [
+      "magic_cuffs"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Grants 1 point of Defense",
+    "obtain": "Frozen Zombie, Raincoat Zombie, Zombie"
+  },
+  "shark_tooth_necklace": {
+    "id": "shark_tooth_necklace",
+    "name": "Shark Tooth Necklace",
+    "path": "shark_tooth_necklace.png",
+    "used_in": [
+      "stinger_necklace"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases armor penetration by 5",
+    "obtain": "Blood Zombies and Dripplers"
+  },
+  "sharkron_balloon": {
+    "id": "sharkron_balloon",
+    "name": "Sharkron Balloon",
+    "path": "sharkron_balloon.png",
+    "used_in": [
+      "pink_horseshoe_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "tsunami_in_a_bottle",
+          "balloon_pufferfish"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases jump height\nAllows the holder to double jump",
+    "obtain": ""
+  },
+  "shimmer": {
+    "id": "shimmer",
+    "name": "Shimmer",
+    "path": "shimmer.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": ""
+  },
+  "shiny_red_balloon": {
+    "id": "shiny_red_balloon",
+    "name": "Shiny Red Balloon",
+    "path": "shiny_red_balloon.png",
+    "used_in": [
+      "blizzard_in_a_balloon",
+      "cloud_in_a_balloon",
+      "fart_in_a_balloon",
+      "honey_balloon",
+      "sandstorm_in_a_balloon"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "balloon_pufferfish"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases jump height",
+    "obtain": "Azure Chest, Sky Crate, Skyware Chest"
+  },
+  "shoe_spikes": {
+    "id": "shoe_spikes",
+    "name": "Shoe Spikes",
+    "path": "shoe_spikes.png",
+    "used_in": [
+      "tiger_climbing_gear"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Allows the ability to slide down walls\nImproved ability if combined with Climbing Claws",
+    "obtain": "Gold Chests underground, Rich Mahogany Chests"
+  },
+  "sniper_scope": {
+    "id": "sniper_scope",
+    "name": "Sniper Scope",
+    "path": "sniper_scope.png",
+    "used_in": [
+      "recon_scope"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "rifle_scope",
+          "destroyer_emblem"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases view range for guns (Right click to zoom out)\n10% increased ranged damage and critical strike chance",
+    "obtain": ""
+  },
+  "sorcerer_emblem": {
+    "id": "sorcerer_emblem",
+    "name": "Sorcerer Emblem",
+    "path": "sorcerer_emblem.png",
+    "used_in": [
+      "avenger_emblem"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "ranger_emblem"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "15% increased magic damage",
+    "obtain": "Wall of Flesh"
+  },
+  "soul_of_fright": {
+    "id": "soul_of_fright",
+    "name": "Soul of Fright",
+    "path": "soul_of_fright.gif",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Skeletron Prime"
+  },
+  "soul_of_might": {
+    "id": "soul_of_might",
+    "name": "Soul of Might",
+    "path": "soul_of_might.gif",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "The Destroyer"
+  },
+  "soul_of_sight": {
+    "id": "soul_of_sight",
+    "name": "Soul of Sight",
+    "path": "soul_of_sight.gif",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "The Twins"
+  },
+  "spectre_boots": {
+    "id": "spectre_boots",
+    "name": "Spectre Boots",
+    "path": "spectre_boots.png",
+    "used_in": [
+      "fairy_boots",
+      "hellfire_treads",
+      "lightning_boots"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "dunerider_boots",
+          "rocket_boots"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "flurry_boots",
+          "rocket_boots"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "hermes_boots",
+          "rocket_boots"
+        ],
+        "station": "tinkerer's_workshop"
+      },
+      {
+        "ingredients": [
+          "sailfish_boots",
+          "rocket_boots"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows flight\nThe wearer can run super fast",
+    "obtain": ""
+  },
+  "stalker's_quiver": {
+    "id": "stalker's_quiver",
+    "name": "Stalker's Quiver",
+    "path": "stalker's_quiver.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "magic_quiver",
+          "putrid_scent"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases arrow damage by 10% and greatly increases arrow speed\n20% chance not to consume arrows\nEnemies are less likely to target you",
+    "obtain": ""
+  },
+  "star_cloak": {
+    "id": "star_cloak",
+    "name": "Star Cloak",
+    "path": "star_cloak.png",
+    "used_in": [
+      "bee_cloak",
+      "mana_cloak",
+      "star_veil"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Causes stars to fall after taking damage",
+    "obtain": "Mimics"
+  },
+  "star_veil": {
+    "id": "star_veil",
+    "name": "Star Veil",
+    "path": "star_veil.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "star_cloak",
+          "cross_necklace"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Causes stars to fall and increases length of invincibility after taking damage",
+    "obtain": ""
+  },
+  "stinger_necklace": {
+    "id": "stinger_necklace",
+    "name": "Stinger Necklace",
+    "path": "stinger_necklace.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "shark_tooth_necklace",
+          "honey_comb"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Increases armor penetration by 5\nReleases bees and douses the user in honey when damaged",
+    "obtain": ""
+  },
+  "summoner_emblem": {
+    "id": "summoner_emblem",
+    "name": "Summoner Emblem",
+    "path": "summoner_emblem.png",
+    "used_in": [
+      "avenger_emblem"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "sorcerer_emblem"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "15% increased minion damage",
+    "obtain": "Wall of Flesh"
+  },
+  "sun_stone": {
+    "id": "sun_stone",
+    "name": "Sun Stone",
+    "path": "sun_stone.png",
+    "used_in": [
+      "celestial_stone"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "If worn during the day, grants minor increase to damage, melee speed, critical strike chance,\nlife regeneration, defense, mining speed, and minion knockback",
+    "obtain": "Golem"
+  },
+  "sweetheart_necklace": {
+    "id": "sweetheart_necklace",
+    "name": "Sweetheart Necklace",
+    "path": "sweetheart_necklace.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "honey_comb",
+          "panic_necklace"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Releases bees, douses the user in honey and increases movement speed when damaged",
+    "obtain": ""
+  },
+  "tabi": {
+    "id": "tabi",
+    "name": "Tabi",
+    "path": "tabi.png",
+    "used_in": [
+      "master_ninja_gear"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Allows the ability to dash\nDouble tap a direction",
+    "obtain": "Bone Lee"
+  },
+  "terraspark_boots": {
+    "id": "terraspark_boots",
+    "name": "Terraspark Boots",
+    "path": "terraspark_boots.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "frostspark_boots",
+          "lava_waders"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows flight, super fast running, and extra mobility on ice\n8% increased movement speed\nProvides the ability to walk on water, honey & lava\nGrants immunity to fire blocks and 7 seconds of immunity to lava\nReduces damage from touching lava",
+    "obtain": ""
+  },
+  "the_plan": {
+    "id": "the_plan",
+    "name": "The Plan",
+    "path": "the_plan.png",
+    "used_in": [
+      "ankh_charm"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "fast_clock",
+          "trifold_map"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Slow and Confusion",
+    "obtain": ""
+  },
+  "tiger_climbing_gear": {
+    "id": "tiger_climbing_gear",
+    "name": "Tiger Climbing Gear",
+    "path": "tiger_climbing_gear.png",
+    "used_in": [
+      "frog_gear",
+      "frog_webbing",
+      "master_ninja_gear"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "climbing_claws",
+          "shoe_spikes"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the ability to climb walls",
+    "obtain": ""
+  },
+  "tinkerer's_workshop": {
+    "id": "tinkerer's_workshop",
+    "name": "Tinkerer's Workshop",
+    "path": "tinkerer's_workshop.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": ""
+  },
+  "titan_glove": {
+    "id": "titan_glove",
+    "name": "Titan Glove",
+    "path": "titan_glove.png",
+    "used_in": [
+      "power_glove"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases melee knockback\nIncreases the size of melee weapons",
+    "obtain": "Mimic"
+  },
+  "topaz": {
+    "id": "topaz",
+    "name": "Topaz",
+    "path": "topaz.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": ""
+  },
+  "trifold_map": {
+    "id": "trifold_map",
+    "name": "Trifold Map",
+    "path": "trifold_map.png",
+    "used_in": [
+      "the_plan"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "fast_clock"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Confusion",
+    "obtain": "Clown, Giant Bat, Light Mummy"
+  },
+  "tsunami_in_a_bottle": {
+    "id": "tsunami_in_a_bottle",
+    "name": "Tsunami in a Bottle",
+    "path": "tsunami_in_a_bottle.png",
+    "used_in": [
+      "sharkron_balloon"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Allows the holder to double jump",
+    "obtain": "Wooden, Iron, Pearlwood, and Mythril Crates"
+  },
+  "vitamins": {
+    "id": "vitamins",
+    "name": "Vitamins",
+    "path": "vitamins.png",
+    "used_in": [
+      "armor_bracing"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "armor_polish"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "Immunity to Weakness",
+    "obtain": "Corruptor, Floaty Gross"
+  },
+  "warrior_emblem": {
+    "id": "warrior_emblem",
+    "name": "Warrior Emblem",
+    "path": "warrior_emblem.png",
+    "used_in": [
+      "avenger_emblem"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "summoner_emblem"
+        ],
+        "station": "shimmer"
+      }
+    ],
+    "type": "A",
+    "effect": "15% increased melee damage",
+    "obtain": "Wall of Flesh"
+  },
+  "water_walking_boots": {
+    "id": "water_walking_boots",
+    "name": "Water Walking Boots",
+    "path": "water_walking_boots.png",
+    "used_in": [
+      "lava_waders",
+      "obsidian_water_walking_boots"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Provides the ability to walk on water & honey",
+    "obtain": "Ocean Crate, Seaside Crate, Water Chest"
+  },
+  "white_horseshoe_balloon": {
+    "id": "white_horseshoe_balloon",
+    "name": "White Horseshoe Balloon",
+    "path": "white_horseshoe_balloon.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "blizzard_in_a_balloon",
+          "lucky_horseshoe"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height and negates fall damage",
+    "obtain": ""
+  },
+  "whoopie_cushion": {
+    "id": "whoopie_cushion",
+    "name": "Whoopie Cushion",
+    "path": "whoopie_cushion.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Digger, Giant Worm in the Underground and Cavern layers"
+  },
+  "yellow_horseshoe_balloon": {
+    "id": "yellow_horseshoe_balloon",
+    "name": "Yellow Horseshoe Balloon",
+    "path": "yellow_horseshoe_balloon.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "sandstorm_in_a_balloon",
+          "lucky_horseshoe"
+        ],
+        "station": "tinkerer's_workshop"
+      }
+    ],
+    "type": "A",
+    "effect": "Allows the holder to double jump\nIncreases jump height and negates fall damage",
+    "obtain": ""
+  }
+}

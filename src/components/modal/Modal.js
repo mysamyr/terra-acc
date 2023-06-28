@@ -1,8 +1,6 @@
-import {v4} from "uuid";
-import {IMG_PATH, SOURCE} from "../../constants";
-import accessories from "../../store/store.json";
-import Item from "../item/Item";
-import {makeKey} from "../../helper";
+import {IMG_PATH} from "../../constants";
+import accessories from "../../store/store2.json";
+import Recipe from "../recipe/Recipe";
 
 import "./Modal.css";
 
@@ -65,42 +63,6 @@ const Modal = ({item, setShowModal, setActiveItem}) => {
       </div>
       <button id="close" onClick={closeModal}>X</button>
     </div>
-  );
-};
-
-const Recipe = (recipe, activeItem, parentItem, setActiveItem) => {
-  const changeActive = (item) => {
-    if (item.id !== activeItem.id) {
-      return setActiveItem(item);
-    }
-  };
-
-  const craftingStation = accessories[recipe.station];
-  const items = recipe.ingredients.map(ingredient => {
-    const item = accessories[ingredient];
-    return (
-      <Item
-        item={item}
-        key={makeKey(SOURCE.RECIPE, item.id)}
-        onClick={() => changeActive(item)}/>
-    );
-  });
-
-  return (
-      <tr key={v4()}>
-        <td>{items}</td>
-        <td>
-          <Item
-            item={craftingStation}
-            key={v4()}/>
-        </td>
-        <td>
-          <Item
-            item={parentItem}
-            key={makeKey(SOURCE.USED_IN, parentItem.id)}
-            onClick={() => changeActive(parentItem)}/>
-        </td>
-      </tr>
   );
 };
 
