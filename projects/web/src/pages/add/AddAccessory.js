@@ -1,11 +1,11 @@
 import {useMemo, useRef, useState} from "react";
 import accessories from "../../store/store2.json";
-import Select from "../../components/input/Select";
 import TextInput from "../../components/input/TextInput";
 
 import './AddAccessory.css';
 import RadioInput from "../../components/input/RadioInput";
 import ImageInput from "../../components/input/ImageInput";
+import RecipesInput from "./components/RecipesInput";
 
 const AddAccessory = () => {
   const nameRef = useRef();
@@ -14,7 +14,7 @@ const AddAccessory = () => {
   const usedInRef = useRef();
   const [img, setImg] = useState("");
   const [type, setType] = useState("A");
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState([{ingredients: "", station: ""}]);
 
   const handleSave = async (e) => {
     e.preventDefault();
@@ -22,7 +22,6 @@ const AddAccessory = () => {
     const effect = effectRef.current.value;
     const obtain = obtainRef.current.value;
     const usedIn = usedInRef.current.value.split(" ").map(i => i.trim());
-    debugger;
     if (!name || !img || !type) {
       return;
     }
@@ -61,10 +60,11 @@ const AddAccessory = () => {
   ]), []);
 
   return <div className="form-fields">
-    <TextInput header="Attribute name" reference={nameRef}/>
-    <ImageInput name="Attribute image" setImg={setImg}/>
+    <TextInput header="Accessory name" reference={nameRef}/>
+    <ImageInput name="Accessory image" setImg={setImg}/>
     <RadioInput config={typeConfig} header="Type" selectedType={type} setType={setType}/>
     <TextInput header="Used in" reference={usedInRef}/>
+    <RecipesInput header="Recipes" accessories={Object.values(accessories)} recipes={recipes} setRecipes={setRecipes}/>
     <TextInput header="Effect" reference={effectRef}/>
     <TextInput header="Obtain from" reference={obtainRef}/>
 
@@ -73,5 +73,3 @@ const AddAccessory = () => {
 };
 
 export default AddAccessory;
-
-//       recipes

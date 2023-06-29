@@ -1,24 +1,23 @@
-import accessories from "../../web/src/store/store2.json" assert { type: "json" };
-import {sort} from "./helpers.js";
 import fs from "fs";
+import path from "path";
+import accessories from "../../web/src/store/store3.json" assert { type: "json" };
+import {sort} from "./helpers.js";
 
-export const addItem = ({name, id, type, usedIn, effect, obtain}) => {
+export const addItem = ({name, id, type, usedIn, recipes, effect, obtain}) => {
   if (accessories[id]) {
     return {error: "Item already exists"};
   }
   if (type === "A" && !effect) {
     return {error: "Accessory should have effect"};
   }
-  // todo validation
-  const path = id + ".png";
+  // todo additional validation
 
   const newItem = {
     id,
     name,
-    path,
+    path: id + ".png",
     used_in: usedIn,
-    // todo
-    recipes: [],
+    recipes,
     type,
     effect,
     obtain,
@@ -28,7 +27,7 @@ export const addItem = ({name, id, type, usedIn, effect, obtain}) => {
   const res = sort(array);
 
   try {
-    fs.writeFileSync("../src/store/store3.json", JSON.stringify(res));
+    fs.writeFileSync(path.join(path.resolve(), "../web/src/store/store3.json"), JSON.stringify(res));
   } catch (e) {
     return {error: "Cannot add new item"};
   }

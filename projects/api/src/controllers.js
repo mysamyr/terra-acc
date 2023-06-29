@@ -6,12 +6,20 @@ import {makeId} from "./helpers.js";
 
 export const server = async (req, res) => {
   if (req.url === "/new" && req.method === "POST") {
-    const dirname = path.join(path.resolve(), "../public/temp");
+    const dirname = path.join(path.resolve(), "../web/public/temp");
     const form = formidable();
     const [fields, files] = await form.parse(req);
-    const {name: [name], type: [type], usedIn: [usedIn], effect: [effect], obtain: [obtain]} = fields;
+    const {name: [name], type: [type], usedIn: [usedIn], recipes: [recipes], effect: [effect], obtain: [obtain]} = fields;
     const id = makeId(name);
-    const {error} = addItem({name, id, type, usedIn: usedIn.split("/"), effect, obtain});
+    const {error} = addItem({
+      name,
+      id,
+      type,
+      usedIn: JSON.parse(usedIn),
+      recipes: JSON.parse(recipes),
+      effect,
+      obtain
+    });
     if (error) {
       console.error(error);
       res.writeHead(400);
