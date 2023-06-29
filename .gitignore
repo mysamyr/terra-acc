@@ -1,11 +1,13 @@
 # dependencies
 /node_modules
+/projects/*/node_modules
 
 # production
-/build
+/projects/web/build
 
 # misc
-.env
+projects/web/.env
+/projects/*/.env
 
 npm-debug.log*
 yarn-debug.log*
