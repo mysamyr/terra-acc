@@ -6,6 +6,7 @@ import './AddAccessory.css';
 import RadioInput from "../../components/input/RadioInput";
 import ImageInput from "../../components/input/ImageInput";
 import RecipesInput from "./components/RecipesInput";
+import {validateAddAccessory} from "../../helper";
 
 const AddAccessory = () => {
   const nameRef = useRef();
@@ -14,7 +15,7 @@ const AddAccessory = () => {
   const usedInRef = useRef();
   const [img, setImg] = useState("");
   const [type, setType] = useState("A");
-  const [recipes, setRecipes] = useState([{ingredients: "", station: ""}]);
+  const [recipes, setRecipes] = useState([]);
 
   const handleSave = async (e) => {
     e.preventDefault();
@@ -22,15 +23,19 @@ const AddAccessory = () => {
     const effect = effectRef.current.value;
     const obtain = obtainRef.current.value;
     const usedIn = usedInRef.current.value.split(" ").map(i => i.trim());
-    if (!name || !img || !type) {
-      return;
-    }
+    const formattedRecipes = recipes.map(recipe => ({
+      ingredients: recipe.ingredients.split(" "),
+      station: recipe.station.trim(),
+    }));
+    const isValid = validateAddAccessory({name, img, type, recipes: formattedRecipes, usedIn});
+    if (!isValid) return;
+
     const formData = new FormData();
     formData.append("name", name);
     formData.append("img", img);
     formData.append("type", type);
     formData.append("usedIn", JSON.stringify(usedIn));
-    formData.append("recipes", JSON.stringify(recipes));
+    formData.append("recipes", JSON.stringify(formattedRecipes));
     formData.append("effect", effect);
     formData.append("obtain", obtain);
     const response = await fetch("http://localhost:3000/new", {
@@ -39,9 +44,10 @@ const AddAccessory = () => {
       mode: 'no-cors',
     });
 
-    if (response.status !== 201) {
-      console.error("atata");
+    if (response.status === 201) {
+      return history.reload();
     }
+    console.error("atata");
   };
 
   const typeConfig = useMemo(() => ([
