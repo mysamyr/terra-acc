@@ -1,4 +1,5 @@
 import {useCallback, useMemo} from "react";
+import {TYPES} from "../../constants";
 
 import './Select.css';
 
@@ -20,7 +21,7 @@ const Select = ({header, accessories, usedIn, setUsedIn}) => {
   }, [setUsedIn]);
 
   const options = useMemo(() => {
-    return Object.values(accessories).filter(i => i.type === "A").map(item =>
+    return Object.values(accessories).filter(i => i.type === TYPES.ACCESSORY).map(item =>
       <option
         key={item.id}
         value={item.id}

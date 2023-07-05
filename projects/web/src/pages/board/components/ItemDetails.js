@@ -1,15 +1,30 @@
+import {v4} from "uuid";
 import {IMG_PATH} from "../../../constants";
 import Recipe from "./Recipe";
 
 import "./ItemDetails.css";
 
-const Select = ({item, setActiveItem, accessories}) => {
-  const recipes = item.recipes.map(recipe => Recipe(recipe, item, item, setActiveItem));
+const ItemDetails = ({item, setActiveItem, accessories}) => {
+  const recipes = item.recipes.map(recipe => <Recipe
+    key={v4()}
+    recipe={recipe}
+    activeItem={item}
+    parentItem={item}
+    setActiveItem={setActiveItem}
+    accessories={accessories}
+  />);
   const usedIn = item.used_in.map(result => {
     const parent = accessories[result];
     return parent.recipes
-    .filter(({ingredients}) => ingredients.includes(item.id))
-    .map(recipe => Recipe(recipe, item, parent, setActiveItem));
+      .filter(({ingredients}) => ingredients.includes(item.id))
+      .map(recipe => <Recipe
+        key={v4()}
+        recipe={recipe}
+        activeItem={item}
+        parentItem={parent}
+        setActiveItem={setActiveItem}
+        accessories={accessories}
+      />);
   });
 
   return <>
@@ -57,4 +72,4 @@ const Select = ({item, setActiveItem, accessories}) => {
   </>;
 };
 
-export default Select;
+export default ItemDetails;

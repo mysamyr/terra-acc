@@ -1,9 +1,8 @@
 import fs from "fs";
 import path from "path";
-import accessories from "../../web/src/store/store3.json" assert { type: "json" };
-import {sort} from "./helpers.js";
+import accessories from "../../web/src/store/store.json" assert { type: "json" };
 
-export const addItem = ({name, id, type, usedIn, recipes, effect, obtain}) => {
+export const addItem = ({name, id, type, usedIn, recipes, effect, obtain, category}) => {
   if (accessories[id]) {
     return {error: "Item already exists"};
   }
@@ -21,13 +20,13 @@ export const addItem = ({name, id, type, usedIn, recipes, effect, obtain}) => {
     type,
     effect,
     obtain,
+    category,
   };
-  const array = Object.values(accessories);
-  array.push(newItem);
-  const res = sort(array);
+
+  accessories[id] = newItem;
 
   try {
-    fs.writeFileSync(path.join(path.resolve(), "../web/src/store/store3.json"), JSON.stringify(res));
+    fs.writeFileSync(path.join(path.resolve(), "../web/src/store/store.json"), JSON.stringify(accessories));
   } catch (e) {
     return {error: "Cannot add new item"};
   }

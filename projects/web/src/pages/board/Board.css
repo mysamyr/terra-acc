@@ -9,6 +9,19 @@
     color: #112e51;
 }
 
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category {
+    width: 100%;
+}
+.category h2 {
+    margin-left: 20px;
+}
+
 .items {
     display: flex;
     flex-wrap: wrap;

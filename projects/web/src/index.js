@@ -6,13 +6,17 @@ import {
 import App from './components/app/App';
 import './index.css';
 import ErrorBoundary from "./components/errorBoundary/ErrorBoundary";
+import { SnackBarContextProvider } from "./components/store/snackbar-context";
+
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ErrorBoundary>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <SnackBarContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </SnackBarContextProvider>
     </ErrorBoundary>
   </React.StrictMode>
 );

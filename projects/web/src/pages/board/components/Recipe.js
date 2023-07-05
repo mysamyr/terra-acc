@@ -1,39 +1,53 @@
-import accessories from "../../../store/store2.json";
-import Item from "../../../components/item/Item";
-import {makeKey} from "../../../helper";
-import {SOURCE} from "../../../constants";
+import {useMemo} from "react";
 import {v4} from "uuid";
+import Item from "../../../components/item/Item";
 
-const Recipe = (recipe, activeItem, parentItem, setActiveItem) => {
+const Recipe = ({recipe, activeItem, parentItem, setActiveItem, accessories}) => {
   const changeActive = (item) => {
     if (item.id !== activeItem.id) {
       return setActiveItem(item);
     }
   };
 
-  const craftingStation = accessories[recipe.station];
-  const items = recipe.ingredients.map(ingredient => {
-    const item = accessories[ingredient];
+  const items = useMemo(() => recipe.ingredients.map(ingredient => {
+    const ingredientHasNumber = typeof ingredient !== "object";
+    const item = ingredientHasNumber
+      ? accessories[ingredient]
+      : accessories[ingredient.name];
+
+    return (
+      <div style={{display: "flex", alignItems: 'center'}} key={v4()}>
+        <Item
+          item={item}
+          onClick={() => changeActive(item)}/>
+        {!ingredientHasNumber && `x${ingredient.number}`}
+      </div>
+    );
+  }), [accessories, recipe]);
+
+  const stations = useMemo(() => recipe.station.map((station, index) => {
+    const item = accessories[station];
+    // render and / or
+    if (!item) return station;
     return (
       <Item
         item={item}
-        key={makeKey(SOURCE.RECIPE, item.id)}
-        onClick={() => changeActive(item)}/>
+        key={v4()}/>
     );
-  });
+  }), [accessories, recipe]);
 
   return (
     <tr key={v4()}>
       <td>{items}</td>
       <td>
-        <Item
-          item={craftingStation}
-          key={v4()}/>
+        <div style={{display: "flex", alignItems: 'center'}}>
+          {stations}
+        </div>
       </td>
       <td>
         <Item
           item={parentItem}
-          key={makeKey(SOURCE.USED_IN, parentItem.id)}
+          key={v4()}
           onClick={() => changeActive(parentItem)}/>
       </td>
     </tr>

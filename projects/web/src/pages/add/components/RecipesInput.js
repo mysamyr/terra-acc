@@ -1,7 +1,9 @@
 import {v4} from "uuid";
+import accessories from "../../../store/store.json";
+import {TYPES} from "../../../constants";
 
-const RecipesInput = ({header, accessories, recipes, setRecipes}) => {
-  const stations = accessories.filter(i => i.type === "S").map(i => <option key={v4()} value={i.id}>{i.name}</option>);
+const RecipesInput = ({header, recipes, setRecipes}) => {
+  const stations = Object.values(accessories).filter(i => i.type === TYPES.STATION).map(i => <option key={v4()} value={i.id}>{i.name}</option>);
 
   const onChangeIngredients = (value, index) => {
     setRecipes(prevState => {
@@ -24,14 +26,11 @@ const RecipesInput = ({header, accessories, recipes, setRecipes}) => {
   };
 
   const onClickDeleteRow = (index) => {
-    setRecipes(prevState => {
-      if (prevState.length === 1) return prevState;
-      return prevState.filter((_, idx) => idx !== index);
-    })
+    setRecipes(prevState => prevState.filter((_, idx) => idx !== index))
   };
 
-  const inputs = recipes.map((recipe, index) => {
-    return <div key={index} style={{display: 'flex', justifyContent: 'space-between'}}>
+  const inputs = recipes.map((recipe, index) =>
+    <div key={index} style={{display: 'flex', justifyContent: 'space-between'}}>
       <label>
         Ingredients:
         <input type="text" onChange={(e) => onChangeIngredients(e.target.value, index)} value={recipe.ingredients}/>
@@ -48,8 +47,7 @@ const RecipesInput = ({header, accessories, recipes, setRecipes}) => {
         color: "red",
         cursor: 'pointer',
       }} onClick={() => onClickDeleteRow(index)}>X</div>
-    </div>
-  });
+    </div>);
 
   return <div style={{width: "50%"}}>
     <h2>{header}</h2>

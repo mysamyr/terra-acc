@@ -1,10 +1,10 @@
-import {useCallback, useState} from "react";
-import { SOURCE, TYPES} from "../../constants";
-import accessories from "../../store/store2.json";
+import {useCallback, useMemo, useState} from "react";
+import {v4} from "uuid";
+import { TYPES} from "../../constants";
+import accessories from "../../store/store.json";
 import ItemDetails from "./components/ItemDetails";
-import Item from "../../components/item/Item";
+import Category from "./components/Category";
 import Modal from "../../components/modal/Modal";
-import { makeKey } from "../../helper";
 
 import './Board.css';
 
@@ -17,27 +17,35 @@ const Board = () => {
       setShowModal(true);
       setActiveItem(item);
     }
-  }, []);
+  }, [activeItem, setShowModal]);
 
   const onHideModal = useCallback(() => {
     setShowModal(false);
     setActiveItem({});
-  }, []);
+  }, [setShowModal, setActiveItem]);
 
-  const cards = Object.values(accessories)
-    .map(item => {
-      return item.type === TYPES.ACCESSORY && (
-        <Item
-          item={item}
-          key={makeKey(SOURCE.BOARD, item.id)}
-          onClick={openModal}/>
-      );
-    }
-  );
+  const separateCategories = useMemo(() => {
+    const accessoriesArray = Object.values(accessories)
+      .filter(item => item.type === TYPES.ACCESSORY);
+    const categories = accessoriesArray.reduce((acc, item) => {
+      item.category.forEach(category => {
+        if (!acc[category]) {
+          acc[category] = [];
+        }
+        acc[category].push(item);
+      });
+      return acc;
+    }, {});
+    return Object.entries(categories);
+  }, [accessories]);
+
+  const categories = separateCategories.map(([key, category]) => {
+    return <Category key={v4()} name={key} items={category} onClick={openModal}/>
+  });
 
   return (
     <div className="container">
-      <div className="items">{cards}</div>
+      <div className="categories">{categories}</div>
       {
         showModal &&
         <Modal onHideModal={onHideModal}>
