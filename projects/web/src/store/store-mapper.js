@@ -14,8 +14,23 @@ const sortById = (arr) =>
     if (a.id > b.id) return 1;
     return 0;
   });
+const addNewItems = (arr) => {
+  const newItems = [
+    {
+      id: "",
+      name: "",
+      path: ".png",
+      used_in: [],
+      recipes: [],
+      type: "",
+      effect: "",
+      obtain: "",
+      category: []
+    },
+  ];
+  return [...arr, ...newItems];
+};
 
-const res = pipe(objToArr, sortById, arrayToObj)(accessories);
-console.log(res);
+const res = pipe(objToArr, addNewItems, sortById, arrayToObj)(accessories);
 
 fs.writeFileSync("./store.json", JSON.stringify(res));

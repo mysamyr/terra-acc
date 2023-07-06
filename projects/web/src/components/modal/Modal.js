@@ -1,39 +1,36 @@
-import {Component} from "react";
+import {useEffect, useCallback} from "react";
 
 import "./Modal.css";
 
-class Modal extends Component {
-  _handleClickModalWrapper = (e) => {
+const Modal = ({onHideModal, children}) => {
+  const handleClickModalWrapper = useCallback((e) => {
     if (e.target.className === "modal-wrapper") {
-      this.props.onHideModal();
+      onHideModal();
     }
-  }
+  }, [onHideModal]);
 
-  _handleKeyDown = (e) => {
+  const handleKeyDown = useCallback((e) => {
     if (e.code === "Escape") {
-      this.props.onHideModal();
+      onHideModal();
     }
-  }
+  }, [onHideModal]);
 
-  componentDidMount(){
-    document.addEventListener("keydown", this._handleKeyDown);
-  }
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
 
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
-  componentWillUnmount() {
-    document.removeEventListener("keydown", this._handleKeyDown);
-  }
-
-  render() {
-    return (
-      <div className="modal-wrapper" onClick={this._handleClickModalWrapper}>
-        <div className="modal">
-          {this.props.children}
-          <button id="close" onClick={this.props.onHideModal}>&times;</button>
-        </div>
+  return (
+    <div className="modal-wrapper" onClick={handleClickModalWrapper}>
+      <div className="modal">
+        {children}
+        <button id="close" onClick={onHideModal}>&times;</button>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Modal;

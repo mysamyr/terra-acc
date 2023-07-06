@@ -1,7 +1,6 @@
 TODO
-- Add wings, expert exclusive
-- Add possibility to set number of ingredients or complex stations on adding new accessories
-- Last work - add recipes for golden/platinum clock
+- Add wings, expert exclusive, Yoyos category
+- Add search
 - make order with styles (move all to .css)
 
   - id - name in snake case ("") *

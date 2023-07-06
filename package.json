@@ -2,7 +2,10 @@
   "name": "terra-acc",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "start:web": "cd projects/web && react-scripts start",
+    "start:api": "cd projects/api && node index.js"
+  },
   "repository": {},
   "keywords": [],
   "author": "",

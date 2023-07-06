@@ -99,6 +99,57 @@
       "Construction"
     ]
   },
+  "angler_earring": {
+    "id": "angler_earring",
+    "name": "Angler Earring",
+    "path": "angler_earring.png",
+    "used_in": [
+      "tackle_box",
+      "angler_tackle_bag"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "high_test_fishing_line"
+        ],
+        "station": [
+          "shimmer"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases fishing power by 10",
+    "obtain": "Angler quest",
+    "category": [
+      "Fishing"
+    ]
+  },
+  "angler_tackle_bag": {
+    "id": "angler_tackle_bag",
+    "name": "Angler Tackle Bag",
+    "path": "angler_tackle_bag.png",
+    "used_in": [
+      "lavaproof_tackle_bag"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "high_test_fishing_line",
+          "tackle_box",
+          "angler_earring"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Fishing line will never break, decreases chance of bait consumption, increases fishing power by 10",
+    "obtain": "",
+    "category": [
+      "Fishing"
+    ]
+  },
   "ankh_charm": {
     "id": "ankh_charm",
     "name": "Ankh Charm",
@@ -164,271 +215,6 @@
     "category": [
       "Movement"
     ]
-  },
-  "iron_anvil": {
-    "id": "iron_anvil",
-    "name": "Iron Anvil",
-    "path": "iron_anvil.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "S",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "lead_anvil": {
-    "id": "lead_anvil",
-    "name": "Lead Anvil",
-    "path": "lead_anvil.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "S",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "table": {
-    "id": "table",
-    "name": "Table",
-    "path": "table.gif",
-    "used_in": [],
-    "recipes": [],
-    "type": "S",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "chair": {
-    "id": "chair",
-    "name": "Chair",
-    "path": "chair.gif",
-    "used_in": [],
-    "recipes": [],
-    "type": "S",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "copper_watch": {
-    "id": "copper_watch",
-    "name": "Copper Watch",
-    "path": "copper_watch.png",
-    "used_in": [],
-    "recipes": [
-      {
-        "ingredients": [
-          {
-            "name": "copper_bar",
-            "number": 10
-          },
-          "chain"
-        ],
-        "station": [
-          "table", "and", "chair"
-        ]
-      }
-    ],
-    "type": "A",
-    "effect": "Tells the time",
-    "obtain": "",
-    "category": ["Informational"]
-  },
-  "tin_watch": {
-    "id": "tin_watch",
-    "name": "Tin Watch",
-    "path": "tin_watch.png",
-    "used_in": [],
-    "recipes": [
-      {
-        "ingredients": [
-          {
-            "name": "tin_bar",
-            "number": 10
-          },
-          "chain"
-        ],
-        "station": [
-          "table", "and", "chair"
-        ]
-      }
-    ],
-    "type": "A",
-    "effect": "Tells the time",
-    "obtain": "",
-    "category": ["Informational"]
-  },
-  "silver_watch": {
-    "id": "silver_watch",
-    "name": "Silver Watch",
-    "path": "silver_watch.png",
-    "used_in": [],
-    "recipes": [
-      {
-        "ingredients": [
-          {
-            "name": "silver_bar",
-            "number": 10
-          },
-          "chain"
-        ],
-        "station": [
-          "table", "and", "chair"
-        ]
-      }
-    ],
-    "type": "A",
-    "effect": "Tells the time",
-    "obtain": "",
-    "category": ["Informational"]
-  },
-  "tungsten_watch": {
-    "id": "tungsten_watch",
-    "name": "Tungsten Watch",
-    "path": "tungsten_watch.png",
-    "used_in": [],
-    "recipes": [
-      {
-        "ingredients": [
-          {
-            "name": "tungsten_bar",
-            "number": 10
-          },
-          "chain"
-        ],
-        "station": [
-          "table", "and", "chair"
-        ]
-      }
-    ],
-    "type": "A",
-    "effect": "Tells the time",
-    "obtain": "",
-    "category": ["Informational"]
-  },
-  "gold_watch": {
-    "id": "gold_watch",
-    "name": "Gold Watch",
-    "path": "gold_watch.png",
-    "used_in": [],
-    "recipes": [
-      {
-        "ingredients": [
-          {
-            "name": "gold_bar",
-            "number": 10
-          },
-          "chain"
-        ],
-        "station": [
-          "table", "and", "chair"
-        ]
-      }
-    ],
-    "type": "A",
-    "effect": "Tells the time",
-    "obtain": "",
-    "category": ["Informational"]
-  },
-  "platinum_watch": {
-    "id": "platinum_watch",
-    "name": "Platinum Watch",
-    "path": "platinum_watch.png",
-    "used_in": [],
-    "recipes": [
-      {
-        "ingredients": [
-          {
-            "name": "platinum_bar",
-            "number": 10
-          },
-          "chain"
-        ],
-        "station": [
-          "table", "and", "chair"
-        ]
-      }
-    ],
-    "type": "A",
-    "effect": "Tells the time",
-    "obtain": "",
-    "category": ["Informational"]
-  },
-  "platinum_bar": {
-    "id": "platinum_bar",
-    "name": "Platinum Bar",
-    "path": "platinum_bar.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "I",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "gold_bar": {
-    "id": "gold_bar",
-    "name": "Gold Bar",
-    "path": "gold_bar.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "I",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "tungsten_bar": {
-    "id": "tungsten_bar",
-    "name": "Tungsten Bar",
-    "path": "tungsten_bar.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "I",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "copper_bar": {
-    "id": "copper_bar",
-    "name": "Copper Bar",
-    "path": "copper_bar.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "I",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "silver_bar": {
-    "id": "silver_bar",
-    "name": "Silver Bar",
-    "path": "silver_bar.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "I",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "tin_bar": {
-    "id": "tin_bar",
-    "name": "Tin Bar",
-    "path": "tin_bar.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "I",
-    "effect": "",
-    "obtain": "",
-    "category": []
-  },
-  "chain": {
-    "id": "chain",
-    "name": "Chain",
-    "path": "chain.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "I",
-    "effect": "",
-    "obtain": "",
-    "category": []
   },
   "apprentice's_scarf": {
     "id": "apprentice's_scarf",
@@ -514,6 +300,43 @@
     "obtain": "",
     "category": [
       "Movement"
+    ]
+  },
+  "argon_moss": {
+    "id": "argon_moss",
+    "name": "Argon Moss",
+    "path": "argon_moss.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "argon_moss_fishing_bobber": {
+    "id": "argon_moss_fishing_bobber",
+    "name": "Argon Moss Fishing Bobber",
+    "path": "argon_moss_fishing_bobber.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "argon_moss",
+            "number": 5
+          },
+          "glowing_fishing_bobber"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases fishing power by 10\nYour bobber now glows",
+    "obtain": "",
+    "category": [
+      "Fishing"
     ]
   },
   "armor_bracing": {
@@ -777,6 +600,21 @@
       "Combat"
     ]
   },
+  "black_counterweight": {
+    "id": "black_counterweight",
+    "name": "Black Counterweight",
+    "path": "black_counterweight.png",
+    "used_in": [
+      "yoyo_bag"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Throws a counterweight after hitting an enemy with a yoyo",
+    "obtain": "From Traveling Merchant for 5 gold",
+    "category": [
+      "Yoyos"
+    ]
+  },
   "blindfold": {
     "id": "blindfold",
     "name": "Blindfold",
@@ -851,6 +689,21 @@
     "obtain": "Boreal Crate, Frozen Chest, Frozen Crate",
     "category": [
       "Movement"
+    ]
+  },
+  "blue_counterweight": {
+    "id": "blue_counterweight",
+    "name": "Blue Counterweight",
+    "path": "blue_counterweight.png",
+    "used_in": [
+      "yoyo_bag"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Throws a counterweight after hitting an enemy with a yoyo",
+    "obtain": "From Skeleton Merchant for 5 gold During Moon phases 1 (full) and 5 (new)",
+    "category": [
+      "Yoyos"
     ]
   },
   "blue_horseshoe_balloon": {
@@ -1063,6 +916,62 @@
       "Combat"
     ]
   },
+  "cell_phone": {
+    "id": "cell_phone",
+    "name": "Cell Phone",
+    "path": "cell_phone.png",
+    "used_in": [
+      "shellphone"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "magic_mirror",
+          "pda"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      },
+      {
+        "ingredients": [
+          "ice_mirror",
+          "pda"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays everything\nAllows you to return home at will",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
+  "chain": {
+    "id": "chain",
+    "name": "Chain",
+    "path": "chain.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "chair": {
+    "id": "chair",
+    "name": "Chair",
+    "path": "chair.gif",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
   "charm_of_myths": {
     "id": "charm_of_myths",
     "name": "Charm of Myths",
@@ -1162,6 +1071,71 @@
       "Combat"
     ]
   },
+  "cobweb": {
+    "id": "cobweb",
+    "name": "Cobweb",
+    "path": "cobweb.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "compass": {
+    "id": "compass",
+    "name": "Compass",
+    "path": "compass.png",
+    "used_in": [
+      "gps"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Displays horizontal position",
+    "obtain": "Armored Viking, Crawdad, Giant Shelly, Mimic, Mother Slime, Salamander, Spore Bat",
+    "category": [
+      "Informational"
+    ]
+  },
+  "copper_bar": {
+    "id": "copper_bar",
+    "name": "Copper Bar",
+    "path": "copper_bar.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "copper_watch": {
+    "id": "copper_watch",
+    "name": "Copper Watch",
+    "path": "copper_watch.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "copper_bar",
+            "number": 10
+          },
+          "chain"
+        ],
+        "station": [
+          "table",
+          "and",
+          "chair"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Tells the time",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
   "countercurse_mantra": {
     "id": "countercurse_mantra",
     "name": "Countercurse Mantra",
@@ -1224,6 +1198,21 @@
     "obtain": "",
     "category": []
   },
+  "demon_conch": {
+    "id": "demon_conch",
+    "name": "Demon Conch",
+    "path": "demon_conch.png",
+    "used_in": [
+      "shellphone"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "If you listen closely, you can hear screams",
+    "obtain": "Mirage Crate, Oasis Crate, Sandstone Chest",
+    "category": [
+      "Miscellaneous"
+    ]
+  },
   "demonite_bar": {
     "id": "demonite_bar",
     "name": "Demonite Bar",
@@ -1234,6 +1223,21 @@
     "effect": "",
     "obtain": "",
     "category": []
+  },
+  "depth_meter": {
+    "id": "depth_meter",
+    "name": "Depth Meter",
+    "path": "depth_meter.png",
+    "used_in": [
+      "gps"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Displays depth",
+    "obtain": "Cave Bat, Crawdad, Giant Bat, Giant Shelly, Ice Bat, Jungle Bat, Salamander, Snow Flix, UndeadViking",
+    "category": [
+      "Informational"
+    ]
   },
   "destroyer_emblem": {
     "id": "destroyer_emblem",
@@ -1298,6 +1302,21 @@
     "obtain": "Shark",
     "category": [
       "Movement"
+    ]
+  },
+  "dps_meter": {
+    "id": "dps_meter",
+    "name": "DPS Meter",
+    "path": "dps_meter.png",
+    "used_in": [
+      "goblin_tech"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Displays your damage per second",
+    "obtain": "Purchased from the Traveling Merchant for 5 gold",
+    "category": [
+      "Informational"
     ]
   },
   "dunerider_boots": {
@@ -1367,6 +1386,17 @@
     "category": [
       "Movement"
     ]
+  },
+  "fallen_star": {
+    "id": "fallen_star",
+    "name": "Fallen Star",
+    "path": "fallen_star.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "Falls from the sky at night",
+    "category": []
   },
   "fart_in_a_balloon": {
     "id": "fart_in_a_balloon",
@@ -1480,6 +1510,72 @@
       "Combat"
     ]
   },
+  "fish_finder": {
+    "id": "fish_finder",
+    "name": "Fish Finder",
+    "path": "fish_finder.png",
+    "used_in": [
+      "pda"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "fisherman's_pocket_guide",
+          "weather_radio",
+          "sextant"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays weather, moon phase, and fishing information",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
+  "fisherman's_pocket_guide": {
+    "id": "fisherman's_pocket_guide",
+    "name": "Fisherman's Pocket Guide",
+    "path": "fisherman's_pocket_guide.png",
+    "used_in": [
+      "fish_finder",
+      "sextant"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "weather_radio"
+        ],
+        "station": [
+          "shimmer"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays fishing information",
+    "obtain": "Fishing quests",
+    "category": [
+      "Informational"
+    ]
+  },
+  "fishing_bobber": {
+    "id": "fishing_bobber",
+    "name": "Fishing Bobber",
+    "path": "fishing_bobber.png",
+    "used_in": [
+      "glowing_fishing_bobber"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Increases fishing power by 10",
+    "obtain": "Angler quest",
+    "category": [
+      "Fishing"
+    ]
+  },
   "flame_waker_boots": {
     "id": "flame_waker_boots",
     "name": "Flame Waker Boots",
@@ -1577,7 +1673,9 @@
     "type": "A",
     "effect": "Allows the owner to float for a few seconds",
     "obtain": "Pyramid's Chest",
-    "category": ["Movement"]
+    "category": [
+      "Movement"
+    ]
   },
   "forbidden_fragment": {
     "id": "forbidden_fragment",
@@ -1774,6 +1872,157 @@
     "obtain": "",
     "category": []
   },
+  "glowing_fishing_bobber": {
+    "id": "glowing_fishing_bobber",
+    "name": "Glowing Fishing Bobber",
+    "path": "glowing_fishing_bobber.png",
+    "used_in": [
+      "argon_moss_fishing_bobber",
+      "helium_moss_fishing_bobber",
+      "krypton_moss_fishing_bobber",
+      "lava_moss_fishing_bobber",
+      "neon_moss_fishing_bobber",
+      "xenon_moss_fishing_bobber"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "fallen_star",
+            "number": 5
+          },
+          "fishing_bobber"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases fishing power by 10\nYour bobber now glows",
+    "obtain": "",
+    "category": [
+      "Fishing"
+    ]
+  },
+  "goblin_tech": {
+    "id": "goblin_tech",
+    "name": "Goblin Tech",
+    "path": "goblin_tech.png",
+    "used_in": [
+      "pda"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "metal_detector",
+          "stopwatch",
+          "dps_meter"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays movement speed, damage per second, and valuable ore",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
+  "gold_bar": {
+    "id": "gold_bar",
+    "name": "Gold Bar",
+    "path": "gold_bar.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "gold_watch": {
+    "id": "gold_watch",
+    "name": "Gold Watch",
+    "path": "gold_watch.png",
+    "used_in": [
+      "gps"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "gold_bar",
+            "number": 10
+          },
+          "chain"
+        ],
+        "station": [
+          "table",
+          "and",
+          "chair"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Tells the time",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
+  "gps": {
+    "id": "gps",
+    "name": "GPS",
+    "path": "gps.png",
+    "used_in": [
+      "pda"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "platinum_watch",
+          "compass",
+          "depth_meter"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      },
+      {
+        "ingredients": [
+          "gold_watch",
+          "compass",
+          "depth_meter"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Shows position\nTells the time",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
+  "green_counterweight": {
+    "id": "green_counterweight",
+    "name": "Green Counterweight",
+    "path": "green_counterweight.png",
+    "used_in": [
+      "yoyo_bag"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Throws a counterweight after hitting an enemy with a yoyo",
+    "obtain": "From Skeleton Merchant for 5 gold During Moon phases 4 and 8",
+    "category": [
+      "Yoyos"
+    ]
+  },
   "green_horseshoe_balloon": {
     "id": "green_horseshoe_balloon",
     "name": "Green Horseshoe Balloon",
@@ -1820,6 +2069,43 @@
     "obtain": "",
     "category": [
       "Construction"
+    ]
+  },
+  "helium_moss": {
+    "id": "helium_moss",
+    "name": "Helium Moss",
+    "path": "helium_moss.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "helium_moss_fishing_bobber": {
+    "id": "helium_moss_fishing_bobber",
+    "name": "Helium Moss Fishing Bobber",
+    "path": "helium_moss_fishing_bobber.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "helium_moss",
+            "number": 5
+          },
+          "glowing_fishing_bobber"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases fishing power by 10\nYour bobber now glows",
+    "obtain": "",
+    "category": [
+      "Fishing"
     ]
   },
   "hellfire_treads": {
@@ -1898,6 +2184,31 @@
       "Combat"
     ]
   },
+  "high_test_fishing_line": {
+    "id": "high_test_fishing_line",
+    "name": "High Test Fishing Line",
+    "path": "high_test_fishing_line.png",
+    "used_in": [
+      "angler_earring",
+      "angler_tackle_bag"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "tackle_box"
+        ],
+        "station": [
+          "shimmer"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Fishing line will never break",
+    "obtain": "Angler quest",
+    "category": [
+      "Fishing"
+    ]
+  },
   "honey_balloon": {
     "id": "honey_balloon",
     "name": "Honey Balloon",
@@ -1954,6 +2265,21 @@
       "Combat"
     ]
   },
+  "ice_mirror": {
+    "id": "ice_mirror",
+    "name": "Ice Mirror",
+    "path": "ice_mirror.png",
+    "used_in": [
+      "cell_phone"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Gaze in the mirror to return home",
+    "obtain": "Frozen Chests",
+    "category": [
+      "Miscellaneous"
+    ]
+  },
   "ice_skates": {
     "id": "ice_skates",
     "name": "Ice Skates",
@@ -1979,7 +2305,20 @@
     "type": "A",
     "effect": "Grants the ability to float in water",
     "obtain": "Ocean Crate, Seaside Crate, Water Chest",
-    "category": ["Movement"]
+    "category": [
+      "Movement"
+    ]
+  },
+  "iron_anvil": {
+    "id": "iron_anvil",
+    "name": "Iron Anvil",
+    "path": "iron_anvil.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": "",
+    "category": []
   },
   "jellyfish_diving_gear": {
     "id": "jellyfish_diving_gear",
@@ -2022,6 +2361,43 @@
       "Miscellaneous"
     ]
   },
+  "krypton_moss": {
+    "id": "krypton_moss",
+    "name": "Krypton Moss",
+    "path": "krypton_moss.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "krypton_moss_fishing_bobber": {
+    "id": "krypton_moss_fishing_bobber",
+    "name": "Krypton Moss Fishing Bobber",
+    "path": "krypton_moss_fishing_bobber.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "krypton_moss",
+            "number": 5
+          },
+          "glowing_fishing_bobber"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases fishing power by 10\nYour bobber now glows",
+    "obtain": "",
+    "category": [
+      "Fishing"
+    ]
+  },
   "lava_charm": {
     "id": "lava_charm",
     "name": "Lava Charm",
@@ -2047,6 +2423,43 @@
     "obtain": "Chests in Caverns with lava, Hellstone Crate, Obsidian Crate",
     "category": [
       "Movement"
+    ]
+  },
+  "lava_moss": {
+    "id": "lava_moss",
+    "name": "Lava Moss",
+    "path": "lava_moss.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "lava_moss_fishing_bobber": {
+    "id": "lava_moss_fishing_bobber",
+    "name": "Lava Moss Fishing Bobber",
+    "path": "lava_moss_fishing_bobber.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "lava_moss",
+            "number": 5
+          },
+          "glowing_fishing_bobber"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases fishing power by 10\nYour bobber now glows",
+    "obtain": "",
+    "category": [
+      "Fishing"
     ]
   },
   "lava_waders": {
@@ -2113,16 +2526,84 @@
       "Movement"
     ]
   },
+  "lavaproof_fishing_hook": {
+    "id": "lavaproof_fishing_hook",
+    "name": "Lavaproof Fishing Hook",
+    "path": "lavaproof_fishing_hook.png",
+    "used_in": [
+      "lavaproof_tackle_bag"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Allows fishing in lava",
+    "obtain": "Hellstone Crate, Obsidian Crate",
+    "category": [
+      "Fishing"
+    ]
+  },
+  "lavaproof_tackle_bag": {
+    "id": "lavaproof_tackle_bag",
+    "name": "Lavaproof Tackle Bag",
+    "path": "lavaproof_tackle_bag.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "angler_tackle_bag",
+          "lavaproof_fishing_hook"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Fishing line will never break, decreases chance of bait consumption, increases fishing power\nAllows fishing in lava",
+    "obtain": "",
+    "category": [
+      "Fishing"
+    ]
+  },
+  "lead_anvil": {
+    "id": "lead_anvil",
+    "name": "Lead Anvil",
+    "path": "lead_anvil.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
   "life_crystal": {
     "id": "life_crystal",
     "name": "Life Crystal",
     "path": "life_crystal.png",
-    "used_in": [],
+    "used_in": [
+      "panic_necklace"
+    ],
     "recipes": [],
-    "type": "I",
+    "type": "A",
     "effect": "Increases maximum mana by 20",
     "obtain": "Any area in the Underground layer and below, Golden Crate, Titanium Crate",
-    "category": []
+    "category": [
+      "Miscellaneous"
+    ]
+  },
+  "lifeform_analyzer": {
+    "id": "lifeform_analyzer",
+    "name": "Lifeform Analyzer",
+    "path": "lifeform_analyzer.png",
+    "used_in": [
+      "r.e.k_3000"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Displays the name of rare creatures around you",
+    "obtain": "Purchased from the Traveling Merchant for 5 gold",
+    "category": [
+      "Informational"
+    ]
   },
   "lightning_boots": {
     "id": "lightning_boots",
@@ -2150,6 +2631,17 @@
       "Movement"
     ]
   },
+  "loom": {
+    "id": "loom",
+    "name": "Loom",
+    "path": "loom.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
   "lucky_horseshoe": {
     "id": "lucky_horseshoe",
     "name": "Amber Horseshoe Balloon",
@@ -2170,6 +2662,21 @@
     "obtain": "Sky Crate, Skyware Chest",
     "category": [
       "Movement"
+    ]
+  },
+  "magic_conch": {
+    "id": "magic_conch",
+    "name": "Magic Conch",
+    "path": "magic_conch.png",
+    "used_in": [
+      "shellphone"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "If you listen closely, you can hear the ocean",
+    "obtain": "Mirage Crate, Oasis Crate, Sandstone Chest",
+    "category": [
+      "Miscellaneous"
     ]
   },
   "magic_cuffs": {
@@ -2195,6 +2702,21 @@
     "obtain": "",
     "category": [
       "Health and Mana"
+    ]
+  },
+  "magic_mirror": {
+    "id": "magic_mirror",
+    "name": "Magic Mirror",
+    "path": "magic_mirror.png",
+    "used_in": [
+      "cell_phone"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Gaze in the mirror to return home",
+    "obtain": "Chests in Underground and Cavern layer",
+    "category": [
+      "Miscellaneous"
     ]
   },
   "magic_quiver": {
@@ -2231,7 +2753,9 @@
           }
         ],
         "station": [
-          "iron_anvil", "or", "lead_anvil"
+          "iron_anvil",
+          "or",
+          "lead_anvil"
         ]
       },
       {
@@ -2246,14 +2770,18 @@
           }
         ],
         "station": [
-          "iron_anvil", "or", "lead_anvil"
+          "iron_anvil",
+          "or",
+          "lead_anvil"
         ]
       }
     ],
     "type": "A",
     "effect": "Increases movement speed and acceleration\nProvides light when worn\n'A brief light in my dark life.'",
     "obtain": "",
-    "category": ["Combat"]
+    "category": [
+      "Combat"
+    ]
   },
   "magma_skull": {
     "id": "magma_skull",
@@ -2361,17 +2889,22 @@
     "recipes": [
       {
         "ingredients": [
-          "fallen_star"
+          {
+            "name": "fallen_star",
+            "number": 5
+          }
         ],
         "station": [
-          "no_station"
+          "By Hand"
         ]
       }
     ],
-    "type": "I",
+    "type": "A",
     "effect": "Permanently increases maximum mana by 20",
-    "obtain": "Mimic",
-    "category": []
+    "obtain": "",
+    "category": [
+      "Miscellaneous"
+    ]
   },
   "mana_flower": {
     "id": "mana_flower",
@@ -2532,6 +3065,21 @@
     "obtain": "Green Jellyfish, Blood Mummy, Dark Mummy, Pixie",
     "category": [
       "Combat"
+    ]
+  },
+  "metal_detector": {
+    "id": "metal_detector",
+    "name": "Metal Detector",
+    "path": "metal_detector.png",
+    "used_in": [
+      "goblin_tech"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Displays the most valuable ore around you",
+    "obtain": "Lost girl, Nymph",
+    "category": [
+      "Informational"
     ]
   },
   "molten_charm": {
@@ -2745,6 +3293,43 @@
       "Combat"
     ]
   },
+  "neon_moss": {
+    "id": "neon_moss",
+    "name": "Neon Moss",
+    "path": "neon_moss.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "neon_moss_fishing_bobber": {
+    "id": "neon_moss_fishing_bobber",
+    "name": "Neon Moss Fishing Bobber",
+    "path": "neon_moss_fishing_bobber.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "neon_moss",
+            "number": 5
+          },
+          "glowing_fishing_bobber"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases fishing power by 10\nYour bobber now glows",
+    "obtain": "",
+    "category": [
+      "Fishing"
+    ]
+  },
   "neptune's_shell": {
     "id": "neptune's_shell",
     "name": "Neptune's Shell",
@@ -2759,17 +3344,6 @@
     "category": [
       "Movement"
     ]
-  },
-  "no_station": {
-    "id": "no_station",
-    "name": "By Hand",
-    "path": "404.png",
-    "used_in": [],
-    "recipes": [],
-    "type": "S",
-    "effect": "",
-    "obtain": "",
-    "category": []
   },
   "obsidian": {
     "id": "obsidian",
@@ -3008,6 +3582,33 @@
       "Combat"
     ]
   },
+  "pda": {
+    "id": "pda",
+    "name": "PDA",
+    "path": "pda.png",
+    "used_in": [
+      "cell_phone"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "gps",
+          "fish_finder",
+          "goblin_tech",
+          "r.e.k_3000"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays everything",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
   "pharaoh's_mask": {
     "id": "pharaoh's_mask",
     "name": "Pharaoh's Mask",
@@ -3066,6 +3667,47 @@
     "obtain": "",
     "category": [
       "Movement"
+    ]
+  },
+  "platinum_bar": {
+    "id": "platinum_bar",
+    "name": "Platinum Bar",
+    "path": "platinum_bar.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "platinum_watch": {
+    "id": "platinum_watch",
+    "name": "Platinum Watch",
+    "path": "platinum_watch.png",
+    "used_in": [
+      "gps"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "platinum_bar",
+            "number": 10
+          },
+          "chain"
+        ],
+        "station": [
+          "table",
+          "and",
+          "chair"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Tells the time",
+    "obtain": "",
+    "category": [
+      "Informational"
     ]
   },
   "pocket_mirror": {
@@ -3133,6 +3775,21 @@
       "Combat"
     ]
   },
+  "purple_counterweight": {
+    "id": "purple_counterweight",
+    "name": "Purple Counterweight",
+    "path": "purple_counterweight.png",
+    "used_in": [
+      "yoyo_bag"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Throws a counterweight after hitting an enemy with a yoyo",
+    "obtain": "From Skeleton Merchant for 5 gold During Moon phases 3 and 7",
+    "category": [
+      "Yoyos"
+    ]
+  },
   "putrid_scent": {
     "id": "putrid_scent",
     "name": "Putrid Scent",
@@ -3161,6 +3818,47 @@
     "obtain": "Purchase from the Witch Doctor for 20 gold at night",
     "category": [
       "Combat"
+    ]
+  },
+  "r.e.k_3000": {
+    "id": "r.e.k_3000",
+    "name": "R.E.K. 3000",
+    "path": "r.e.k_3000.png",
+    "used_in": [
+      "pda"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "tally_counter",
+          "lifeform_analyzer",
+          "radar"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays number of monsters, kill count, and rare creatures",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
+  "radar": {
+    "id": "radar",
+    "name": "Radar",
+    "path": "radar.png",
+    "used_in": [
+      "r.e.k_3000"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Detects enemies around you",
+    "obtain": "Chest, Pearlwood Crate, Wooden CrateWooden Crate or can be obtained from the Skeleton Merchant for 2 Gold 50 Silver",
+    "category": [
+      "Informational"
     ]
   },
   "ranger_emblem": {
@@ -3208,6 +3906,21 @@
     "obtain": "",
     "category": [
       "Combat"
+    ]
+  },
+  "red_counterweight": {
+    "id": "red_counterweight",
+    "name": "Red Counterweight",
+    "path": "red_counterweight.png",
+    "used_in": [
+      "yoyo_bag"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Throws a counterweight after hitting an enemy with a yoyo",
+    "obtain": "From Skeleton Merchant for 5 gold During Moon phases 2 and 6",
+    "category": [
+      "Yoyos"
     ]
   },
   "reflective_shades": {
@@ -3341,6 +4054,31 @@
       "Movement"
     ]
   },
+  "sextant": {
+    "id": "sextant",
+    "name": "Sextant",
+    "path": "sextant.png",
+    "used_in": [
+      "fish_finder",
+      "weather_radio"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "fisherman's_pocket_guide"
+        ],
+        "station": [
+          "shimmer"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays the phase of the moon",
+    "obtain": "Fishing quests",
+    "category": [
+      "Informational"
+    ]
+  },
   "shackle": {
     "id": "shackle",
     "name": "Shackle",
@@ -3396,6 +4134,30 @@
       "Movement"
     ]
   },
+  "shellphone": {
+    "id": "shellphone",
+    "name": "Shellphone",
+    "path": "shellphone.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "cell_phone",
+          "magic_conch",
+          "demon_conch"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays everything\nRight click to toggle destination",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
   "shimmer": {
     "id": "shimmer",
     "name": "Shimmer",
@@ -3448,6 +4210,45 @@
     "obtain": "Gold Chests underground, Rich Mahogany Chests",
     "category": [
       "Movement"
+    ]
+  },
+  "silver_bar": {
+    "id": "silver_bar",
+    "name": "Silver Bar",
+    "path": "silver_bar.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "silver_watch": {
+    "id": "silver_watch",
+    "name": "Silver Watch",
+    "path": "silver_watch.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "silver_bar",
+            "number": 10
+          },
+          "chain"
+        ],
+        "station": [
+          "table",
+          "and",
+          "chair"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Tells the time",
+    "obtain": "",
+    "category": [
+      "Informational"
     ]
   },
   "sniper_scope": {
@@ -3700,6 +4501,21 @@
       "Combat"
     ]
   },
+  "stopwatch": {
+    "id": "stopwatch",
+    "name": "Stopwatch",
+    "path": "stopwatch.png",
+    "used_in": [
+      "goblin_tech"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Displays how fast the player is moving",
+    "obtain": "Purchased from the Traveling Merchant for 5 gold",
+    "category": [
+      "Informational"
+    ]
+  },
   "summoner_emblem": {
     "id": "summoner_emblem",
     "name": "Summoner Emblem",
@@ -3777,6 +4593,57 @@
       "Movement"
     ]
   },
+  "table": {
+    "id": "table",
+    "name": "Table",
+    "path": "table.gif",
+    "used_in": [],
+    "recipes": [],
+    "type": "S",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "tackle_box": {
+    "id": "tackle_box",
+    "name": "Tackle Box",
+    "path": "tackle_box.png",
+    "used_in": [
+      "high_test_fishing_line",
+      "angler_tackle_bag"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "angler_earring"
+        ],
+        "station": [
+          "shimmer"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Decreases chance of bait consumption",
+    "obtain": "Angler quest",
+    "category": [
+      "Fishing"
+    ]
+  },
+  "tally_counter": {
+    "id": "tally_counter",
+    "name": "Tally Counter",
+    "path": "tally_counter.png",
+    "used_in": [
+      "r.e.k_3000"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Displays how many monsters have been killed",
+    "obtain": "Angry Bones, Cursed Skull, Dark Caster",
+    "category": [
+      "Informational"
+    ]
+  },
   "terraspark_boots": {
     "id": "terraspark_boots",
     "name": "Terraspark Boots",
@@ -3850,6 +4717,45 @@
     "obtain": "",
     "category": [
       "Movement"
+    ]
+  },
+  "tin_bar": {
+    "id": "tin_bar",
+    "name": "Tin Bar",
+    "path": "tin_bar.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "tin_watch": {
+    "id": "tin_watch",
+    "name": "Tin Watch",
+    "path": "tin_watch.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "tin_bar",
+            "number": 10
+          },
+          "chain"
+        ],
+        "station": [
+          "table",
+          "and",
+          "chair"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Tells the time",
+    "obtain": "",
+    "category": [
+      "Informational"
     ]
   },
   "tinkerer's_workshop": {
@@ -3969,6 +4875,45 @@
       "Movement"
     ]
   },
+  "tungsten_bar": {
+    "id": "tungsten_bar",
+    "name": "Tungsten Bar",
+    "path": "tungsten_bar.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "tungsten_watch": {
+    "id": "tungsten_watch",
+    "name": "Tungsten Watch",
+    "path": "tungsten_watch.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "tungsten_bar",
+            "number": 10
+          },
+          "chain"
+        ],
+        "station": [
+          "table",
+          "and",
+          "chair"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Tells the time",
+    "obtain": "",
+    "category": [
+      "Informational"
+    ]
+  },
   "vitamins": {
     "id": "vitamins",
     "name": "Vitamins",
@@ -4033,6 +4978,31 @@
       "Movement"
     ]
   },
+  "weather_radio": {
+    "id": "weather_radio",
+    "name": "Weather Radio",
+    "path": "weather_radio.png",
+    "used_in": [
+      "fish_finder",
+      "fisherman's_pocket_guide"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          "sextant"
+        ],
+        "station": [
+          "shimmer"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Displays the weather",
+    "obtain": "Fishing quests",
+    "category": [
+      "Informational"
+    ]
+  },
   "white_horseshoe_balloon": {
     "id": "white_horseshoe_balloon",
     "name": "White Horseshoe Balloon",
@@ -4056,16 +5026,115 @@
       "Movement"
     ]
   },
+  "white_string": {
+    "id": "white_string",
+    "name": "White String",
+    "path": "white_string.png",
+    "used_in": [
+      "yoyo_bag"
+    ],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "cobweb",
+            "number": 30
+          }
+        ],
+        "station": [
+          "loom"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases yoyo range",
+    "obtain": "",
+    "category": [
+      "Yoyos"
+    ]
+  },
   "whoopie_cushion": {
     "id": "whoopie_cushion",
     "name": "Whoopie Cushion",
     "path": "whoopie_cushion.png",
+    "used_in": ["fart_in_a_jar"],
+    "recipes": [{
+      "ingredients": [
+        "zombie_arm"
+      ],
+      "station": [
+        "shimmer"
+      ]
+    }],
+    "type": "A",
+    "effect": "",
+    "obtain": "Digger, Giant Worm in the Underground and Cavern layers",
+    "category": [
+      "Miscellaneous"
+    ]
+  },
+  "zombie_arm": {
+    "id": "zombie_arm",
+    "name": "Zombie Arm",
+    "path": "zombie_arm.png",
     "used_in": [],
     "recipes": [],
     "type": "I",
     "effect": "",
-    "obtain": "Digger, Giant Worm in the Underground and Cavern layers",
+    "obtain": "Zombie",
     "category": []
+  },
+  "xenon_moss": {
+    "id": "xenon_moss",
+    "name": "Xenon Moss",
+    "path": "xenon_moss.png",
+    "used_in": [],
+    "recipes": [],
+    "type": "I",
+    "effect": "",
+    "obtain": "",
+    "category": []
+  },
+  "xenon_moss_fishing_bobber": {
+    "id": "xenon_moss_fishing_bobber",
+    "name": "Xenon Moss Fishing Bobber",
+    "path": "xenon_moss_fishing_bobber.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          {
+            "name": "xenon_moss",
+            "number": 5
+          },
+          "glowing_fishing_bobber"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Increases fishing power by 10\nYour bobber now glows",
+    "obtain": "",
+    "category": [
+      "Fishing"
+    ]
+  },
+  "yellow_counterweight": {
+    "id": "yellow_counterweight",
+    "name": "Yellow Counterweight",
+    "path": "yellow_counterweight.png",
+    "used_in": [
+      "yoyo_bag"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Throws a counterweight after hitting an enemy with a yoyo",
+    "obtain": "From Traveling Merchant for 5 gold",
+    "category": [
+      "Yoyos"
+    ]
   },
   "yellow_horseshoe_balloon": {
     "id": "yellow_horseshoe_balloon",
@@ -4088,6 +5157,95 @@
     "obtain": "",
     "category": [
       "Movement"
+    ]
+  },
+  "yoyo_bag": {
+    "id": "yoyo_bag",
+    "name": "Yoyo Bag",
+    "path": "yoyo_bag.png",
+    "used_in": [],
+    "recipes": [
+      {
+        "ingredients": [
+          "white_string",
+          "yoyo_glove",
+          "black_counterweight"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      },
+      {
+        "ingredients": [
+          "white_string",
+          "yoyo_glove",
+          "blue_counterweight"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      },
+      {
+        "ingredients": [
+          "white_string",
+          "yoyo_glove",
+          "green_counterweight"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      },
+      {
+        "ingredients": [
+          "white_string",
+          "yoyo_glove",
+          "purple_counterweight"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      },
+      {
+        "ingredients": [
+          "white_string",
+          "yoyo_glove",
+          "red_counterweight"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      },
+      {
+        "ingredients": [
+          "white_string",
+          "yoyo_glove",
+          "yellow_counterweight"
+        ],
+        "station": [
+          "tinkerer's_workshop"
+        ]
+      }
+    ],
+    "type": "A",
+    "effect": "Gives the user master yoyo skills",
+    "obtain": "",
+    "category": [
+      "Yoyos"
+    ]
+  },
+  "yoyo_glove": {
+    "id": "yoyo_glove",
+    "name": "Yoyo Glove",
+    "path": "yoyo_glove.png",
+    "used_in": [
+      "yoyo_bag"
+    ],
+    "recipes": [],
+    "type": "A",
+    "effect": "Allows the use of two yoyos at once",
+    "obtain": "",
+    "category": [
+      "Yoyos"
     ]
   }
 }

@@ -25,9 +25,9 @@ const Recipe = ({recipe, activeItem, parentItem, setActiveItem, accessories}) =>
     );
   }), [accessories, recipe]);
 
-  const stations = useMemo(() => recipe.station.map((station, index) => {
+  const stations = useMemo(() => recipe.station.map((station) => {
     const item = accessories[station];
-    // render and / or
+    // render and / or / By Hand
     if (!item) return station;
     return (
       <Item
