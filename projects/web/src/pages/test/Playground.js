@@ -1,8 +1,5 @@
-const Playground = ()=> {
-
-  return (<>
-
-  </>);
-  };
+const Playground = () => {
+	return <></>;
+};
 
 export default Playground;

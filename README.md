@@ -1,7 +1,8 @@
 TODO
-- Add wings, expert exclusive, Yoyos category
+- Add wings, expert exclusive
 - Add search
 - make order with styles (move all to .css)
+- make normal modal provider with styles (no overflow)
 
   - id - name in snake case ("") *
   - name - name of acc ("") *

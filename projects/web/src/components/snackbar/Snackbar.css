@@ -1,34 +1,35 @@
 .snackbar__container {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #323232;
-    color: #fff;
-    z-index: 10;
-    margin: 16px;
-    border-radius: 4px;
-    min-width: 21rem;
-    max-width: 42rem;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
-        0 6px 10px 0 rgba(0, 0, 0, 0.14),
-        0 1px 18px 0 rgba(0, 0, 0, 0.12);
-    padding: .5rem;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #323232;
+	color: #fff;
+	z-index: 10;
+	margin: 16px;
+	border-radius: 4px;
+	min-width: 21rem;
+	max-width: 42rem;
+	box-shadow:
+		0 3px 5px -1px rgba(0, 0, 0, 0.2),
+		0 6px 10px 0 rgba(0, 0, 0, 0.14),
+		0 1px 18px 0 rgba(0, 0, 0, 0.12);
+	padding: 0.5rem;
 }
 
 .snackbar__label {
-    line-height: 1.2rem;
-    width: 100%;
-    margin: 0;
-    padding: 14px 8px 14px 16px;
+	line-height: 1.2rem;
+	width: 100%;
+	margin: 0;
+	padding: 14px 8px 14px 16px;
 }
 
 .snackbar__dismiss {
-    color: #ae7ee9;
-    font-size: 120%;
-    font-weight: bold;
-    cursor: pointer;
-    padding: .5rem 1rem;
+	color: #ae7ee9;
+	font-size: 120%;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
 }

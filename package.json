@@ -4,10 +4,17 @@
   "description": "",
   "scripts": {
     "start:web": "cd projects/web && react-scripts start",
-    "start:api": "cd projects/api && node index.js"
+    "start:api": "cd projects/api && node index.js",
+    "check-formatting": "prettier projects",
+    "fix-formatting": "prettier --write projects",
+    "prepare": "husky install"
   },
   "repository": {},
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0"
+  }
 }

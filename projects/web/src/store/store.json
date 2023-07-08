@@ -401,9 +401,18 @@
       {
         "ingredients": [
           "ranger_emblem",
-          "soul_of_might",
-          "soul_of_sight",
-          "soul_of_fright"
+          {
+            "name": "soul_of_might",
+            "number": 5
+          },
+          {
+            "name": "soul_of_sight",
+            "number": 5
+          },
+          {
+            "name": "soul_of_fright",
+            "number": 5
+          }
         ],
         "station": [
           "tinkerer's_workshop"
@@ -412,9 +421,18 @@
       {
         "ingredients": [
           "sorcerer_emblem",
-          "soul_of_might",
-          "soul_of_sight",
-          "soul_of_fright"
+          {
+            "name": "soul_of_might",
+            "number": 5
+          },
+          {
+            "name": "soul_of_sight",
+            "number": 5
+          },
+          {
+            "name": "soul_of_fright",
+            "number": 5
+          }
         ],
         "station": [
           "tinkerer's_workshop"
@@ -423,9 +441,18 @@
       {
         "ingredients": [
           "summoner_emblem",
-          "soul_of_might",
-          "soul_of_sight",
-          "soul_of_fright"
+          {
+            "name": "soul_of_might",
+            "number": 5
+          },
+          {
+            "name": "soul_of_sight",
+            "number": 5
+          },
+          {
+            "name": "soul_of_fright",
+            "number": 5
+          }
         ],
         "station": [
           "tinkerer's_workshop"
@@ -434,9 +461,18 @@
       {
         "ingredients": [
           "warrior_emblem",
-          "soul_of_might",
-          "soul_of_sight",
-          "soul_of_fright"
+          {
+            "name": "soul_of_might",
+            "number": 5
+          },
+          {
+            "name": "soul_of_sight",
+            "number": 5
+          },
+          {
+            "name": "soul_of_fright",
+            "number": 5
+          }
         ],
         "station": [
           "tinkerer's_workshop"

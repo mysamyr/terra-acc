@@ -1,0 +1,5 @@
+**/*.json
+node_modules
+projects/*/node_modules
+projects/web/public
+projects/web/build
