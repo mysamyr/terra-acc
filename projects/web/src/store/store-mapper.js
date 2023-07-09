@@ -27,12 +27,17 @@ const addNewItems = (arr) => {
 			id: "",
 			name: "",
 			path: ".png",
-			used_in: [],
-			recipes: [],
-			type: "",
+			used_in: [""],
+			recipes: [
+				{
+					ingredients: [],
+					station: ["tinkerer's_workshop"],
+				},
+			],
+			type: "A",
 			effect: "",
 			obtain: "",
-			category: [],
+			category: [""],
 		},
 	];
 	return [...arr, ...newItems];
