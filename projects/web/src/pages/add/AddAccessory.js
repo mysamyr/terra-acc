@@ -52,7 +52,7 @@ const AddAccessory = () => {
 		formData.append("effect", effect);
 		formData.append("obtain", obtain);
 		formData.append("category", JSON.stringify(categories));
-		fetch("http://localhost:3000/new", {
+		fetch(`${process.env.SERVER_URL}/new`, {
 			method: "POST",
 			body: formData,
 			mode: "no-cors",

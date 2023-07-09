@@ -1,16 +1,12 @@
 import { useEffect, useCallback } from "react";
-import {
-	EVENT_NAMES,
-	KEYBOARD_CODES,
-	MODAL_WRAPPER_CLASS_NAME,
-} from "../../constants";
+import { EVENT_NAMES, KEYBOARD_CODES, CLASS_NAMES } from "../../constants";
 
 import "./Modal.css";
 
 const Modal = ({ onHideModal, children }) => {
 	const handleClickModalWrapper = useCallback(
 		(e) => {
-			if (e.target.className === MODAL_WRAPPER_CLASS_NAME) {
+			if (e.target.className === CLASS_NAMES.MODAL_WRAPPER_CLASS_NAME) {
 				onHideModal();
 			}
 		},
@@ -28,10 +24,10 @@ const Modal = ({ onHideModal, children }) => {
 
 	useEffect(() => {
 		document.addEventListener(EVENT_NAMES.KEYDOWN, handleKeyDown);
-		document.body.classList.add("modal-open");
+		document.body.classList.add(CLASS_NAMES.MODAL_OPEN);
 		return () => {
 			document.removeEventListener(EVENT_NAMES.KEYDOWN, handleKeyDown);
-			document.body.classList.remove("modal-open");
+			document.body.classList.remove(CLASS_NAMES.MODAL_OPEN);
 		};
 	}, []);
 

@@ -197,7 +197,7 @@ const addNewItems = (arr) => {
 			type: "A",
 			effect: "",
 			obtain: "",
-			category: [""],
+			category: ["Wings"],
 		},
 	];
 	validateAccessories(newItems);

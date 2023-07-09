@@ -29,4 +29,4 @@ Category can be:
 - Yoyos
 - Miscellaneous
 - Wings (in progress)
-- Expert mode exclusive (in progress)
+- Expert mode exclusive
