@@ -35,7 +35,7 @@ const Recipe = ({
 
 	const stations = useMemo(
 		() =>
-			recipe.station.map((station) => {
+			recipe.stations.map((station) => {
 				const item = accessories[station];
 				// render and / or / By Hand
 				if (!item) return station;

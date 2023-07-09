@@ -2,6 +2,7 @@ import { useCallback, useMemo } from "react";
 import { TYPES } from "../../constants";
 
 import "./Select.css";
+import { objToArr } from "../../helpers";
 
 const Select = ({ header, accessories, usedIn, setUsedIn }) => {
 	const usedInString = [...usedIn].join(", ");
@@ -23,7 +24,7 @@ const Select = ({ header, accessories, usedIn, setUsedIn }) => {
 	);
 
 	const options = useMemo(() => {
-		return Object.values(accessories)
+		return objToArr(accessories)
 			.filter((i) => i.type === TYPES.ACCESSORY)
 			.map((item) => (
 				<option key={item.id} value={item.id} onClick={onSelectOption}>

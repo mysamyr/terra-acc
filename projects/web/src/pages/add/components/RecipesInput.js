@@ -1,10 +1,11 @@
 import { v4 } from "uuid";
 import accessories from "../../../store/store.json";
 import { TYPES } from "../../../constants";
+import { objToArr } from "../../../helpers";
 
 // todo
 const RecipesInput = ({ header, recipes, setRecipes }) => {
-	const stations = Object.values(accessories)
+	const stations = objToArr(accessories)
 		.filter((i) => i.type === TYPES.STATION)
 		.map((i) => (
 			<option key={v4()} value={i.id}>
@@ -21,14 +22,14 @@ const RecipesInput = ({ header, recipes, setRecipes }) => {
 
 	const onChangeStation = (value, index) => {
 		setRecipes((prevState) => {
-			prevState[index] = { ...prevState[index], station: value };
+			prevState[index] = { ...prevState[index], stations: value };
 			return [...prevState];
 		});
 	};
 
 	const onClickAddRow = () => {
 		setRecipes((prevState) => {
-			return [...prevState, { ingredients: "", station: "" }];
+			return [...prevState, { ingredients: "", stations: "" }];
 		});
 	};
 
@@ -50,12 +51,12 @@ const RecipesInput = ({ header, recipes, setRecipes }) => {
 				/>
 			</label>
 			<label>
-				Crafting station:
+				Crafting stations:
 				<input
 					type="search"
 					list="stations"
 					onChange={(e) => onChangeStation(e.target.value, index)}
-					value={recipe.station}
+					value={recipe.stations}
 				/>
 			</label>
 			<div

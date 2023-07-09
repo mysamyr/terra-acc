@@ -30,7 +30,7 @@ const AddAccessory = () => {
 		const obtain = obtainRef.current.value;
 		const formattedRecipes = recipes.map((recipe) => ({
 			ingredients: recipe.ingredients.split(" "),
-			station: recipe.station.trim(),
+			stations: recipe.stations.trim(),
 		}));
 		const isValid = validateAddAccessory({
 			name,

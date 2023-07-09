@@ -1,5 +1,5 @@
 TODO
-- Add wings, expert exclusive
+- Add wings
 - Add extended search (optional)
 - Make normal acc adder
 
@@ -29,4 +29,4 @@ Category can be:
 - Yoyos
 - Miscellaneous
 - Wings (in progress)
-- Expert exclusive (in progress)
+- Expert mode exclusive (in progress)
