@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react";
-import { IMG_PATH, TYPES } from "../../constants";
+import { IMG_PATH, TYPES } from "../../../../constants";
 
 import "./Item.css";
 
@@ -16,18 +16,15 @@ const Item = ({ item, onClick }) => {
 		return item.recipes.length && !item.used_in.length;
 	}, [item]);
 
+	const className = useMemo(() => {
+		let res = "item";
+		if (isPremium) res += " premium-item";
+		if (isAccessory) res += " active-item";
+		return res;
+	}, [item]);
+
 	return (
-		<div
-			className="item"
-			style={{
-				backgroundColor: isPremium ? "#fddc5c" : "azure",
-				cursor: isAccessory ? "pointer" : "auto",
-				borderRight: isAccessory ? "1px solid black" : 0,
-				borderBottom: isAccessory ? "1px solid black" : 0,
-			}}
-			onClick={clickAccessory}
-			title={item.name}
-		>
+		<div className={className} onClick={clickAccessory} title={item.name}>
 			<img src={IMG_PATH + item.path} alt={item.name} />
 		</div>
 	);

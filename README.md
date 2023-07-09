@@ -1,14 +1,13 @@
 TODO
 - Add wings, expert exclusive
-- Add search
-- make order with styles (move all to .css)
-- make normal modal provider with styles (no overflow)
+- Add extended search (optional)
+- Make normal acc adder
 
   - id - name in snake case ("") *
   - name - name of acc ("") *
   - path - relative path to img ("${id}.png") *
   - used_in - array of ids, where item is used ([""])
-  - recipes - array of objects, that includes ingredients (["" | {name: string, number: number}]) and array with stations [""]
+  - recipes - array of objects, that includes ingredients (["" | ["", "${text}"]]) and array with stations [""]
   - type - A (accessory), S (station), I (ingredient) ("") *
   - effect - description of effect, that acc gives ("")
   - obtain - if item can be obtained not from crafting ("")
@@ -28,5 +27,6 @@ Category can be:
 - Construction
 - Fishing
 - Yoyos
-- Misc
+- Miscellaneous
 - Wings (in progress)
+- Expert exclusive (in progress)

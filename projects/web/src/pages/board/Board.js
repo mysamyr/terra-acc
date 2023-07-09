@@ -1,26 +1,19 @@
 import { useCallback, useMemo, useState } from "react";
 import { v4 } from "uuid";
 import { TYPES } from "../../constants";
-import accessories from "../../store/store.json";
-import ItemDetails from "./components/ItemDetails";
-import Category from "./components/Category";
+import store from "../../store/store.json";
+import ItemDetails from "./components/item-details/ItemDetails";
+import Category from "./components/category/Category";
 import Modal from "../../components/modal/Modal";
+import Header from "./components/header/Header";
+import { objToArr } from "../../helpers";
 
 import "./Board.css";
 
 const Board = () => {
 	const [showModal, setShowModal] = useState(false);
 	const [activeItem, setActiveItem] = useState({});
-
-	const styles = {
-		container: {
-			margin: "0 auto",
-			padding: "20px 0",
-			maxWidth: "1080px",
-			backgroundColor: "#e7f4e4",
-			color: "#112e51",
-		},
-	};
+	const [searchString, setSearchString] = useState("");
 
 	const openModal = useCallback(
 		(item) => {
@@ -37,8 +30,17 @@ const Board = () => {
 		setActiveItem({});
 	}, [setShowModal, setActiveItem]);
 
+	const accessories = useMemo(() => {
+		const accessoriesArray = objToArr(store);
+		if (!searchString) return accessoriesArray;
+
+		return accessoriesArray.filter((acc) =>
+			acc.name.toLowerCase().includes(searchString.toLowerCase()),
+		);
+	}, [store, searchString]);
+
 	const separateCategories = useMemo(() => {
-		const accessoriesArray = Object.values(accessories).filter(
+		const accessoriesArray = accessories.filter(
 			(item) => item.type === TYPES.ACCESSORY,
 		);
 		const categories = accessoriesArray.reduce((acc, item) => {
@@ -61,11 +63,12 @@ const Board = () => {
 
 	return (
 		<div className="container">
+			<Header string={searchString} setString={setSearchString} />
 			<div className="categories">{categories}</div>
 			{showModal && (
 				<Modal onHideModal={onHideModal}>
 					<ItemDetails
-						accessories={accessories}
+						accessories={store}
 						item={activeItem}
 						setActiveItem={setActiveItem}
 					/>

@@ -1,6 +1,6 @@
 import { v4 } from "uuid";
-import { IMG_PATH } from "../../../constants";
-import Recipe from "./Recipe";
+import { IMG_PATH } from "../../../../constants";
+import Recipe from "../recipe/Recipe";
 
 import "./ItemDetails.css";
 

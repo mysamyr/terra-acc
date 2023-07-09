@@ -1,17 +1,11 @@
 .add-row {
-	width: 20px;
-	padding: 2px;
 	margin: 0 auto;
 	text-align: center;
 	background-color: #a2e090;
 	color: green;
-	cursor: pointer;
 }
 .remove-row {
-	width: 20px;
-	padding: 2px;
 	text-align: center;
-	background-color: #fbb;
 	color: red;
-	cursor: pointer;
+	background-color: #fbb;
 }

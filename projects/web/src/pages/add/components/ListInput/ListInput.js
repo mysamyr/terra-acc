@@ -26,8 +26,11 @@ const ListInput = ({ header, list, setList }) => {
 				onChange={(e) => onChange(e.target.value, index)}
 				value={item}
 			/>
-			<div className="remove-row" onClick={() => onClickDeleteRow(index)}>
-				X
+			<div
+				className="icon-button remove-row"
+				onClick={() => onClickDeleteRow(index)}
+			>
+				&times;
 			</div>
 		</div>
 	));
@@ -36,7 +39,7 @@ const ListInput = ({ header, list, setList }) => {
 		<div style={{ width: "50%" }}>
 			<h2>{header}</h2>
 			{inputs}
-			<div className="add-row" onClick={onClickAddRow}>
+			<div className="icon-button add-row" onClick={onClickAddRow}>
 				+
 			</div>
 		</div>

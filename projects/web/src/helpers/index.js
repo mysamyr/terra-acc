@@ -1,3 +1,18 @@
+export const objToArr = (obj) => Object.values(obj);
+
+export const arrayToObj = (arr) =>
+	arr.reduce((acc, item) => {
+		acc[item.id] = item;
+		return acc;
+	}, {});
+
+export const sortById = (arr) =>
+	arr.sort((a, b) => {
+		if (a.id < b.id) return -1;
+		if (a.id > b.id) return 1;
+		return 0;
+	});
+
 export const validateAddAccessory = ({
 	name,
 	img,

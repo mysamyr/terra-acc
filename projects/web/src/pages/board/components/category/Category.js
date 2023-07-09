@@ -1,5 +1,7 @@
 import { v4 } from "uuid";
-import Item from "../../../components/item/Item";
+import Item from "../item/Item";
+
+import "./Category.css";
 
 const Category = ({ name, items, onClick }) => {
 	const list = items.map((item) => (
@@ -8,8 +10,8 @@ const Category = ({ name, items, onClick }) => {
 
 	return (
 		<div className="category">
-			<h2>{name}</h2>
-			<div className="items">{list}</div>
+			<h3>{name}</h3>
+			<div className="category-list">{list}</div>
 		</div>
 	);
 };

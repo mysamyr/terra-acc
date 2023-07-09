@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { v4 } from "uuid";
-import Item from "../../../components/item/Item";
+import Item from "../item/Item";
 
 const Recipe = ({
 	recipe,
@@ -18,15 +18,15 @@ const Recipe = ({
 	const items = useMemo(
 		() =>
 			recipe.ingredients.map((ingredient) => {
-				const ingredientHasNumber = typeof ingredient !== "object";
-				const item = ingredientHasNumber
-					? accessories[ingredient]
-					: accessories[ingredient.name];
+				const complexIngredient = Array.isArray(ingredient);
+				const item = complexIngredient
+					? accessories[ingredient[0]]
+					: accessories[ingredient];
 
 				return (
 					<div style={{ display: "flex", alignItems: "center" }} key={v4()}>
 						<Item item={item} onClick={() => changeActive(item)} />
-						{!ingredientHasNumber && `x${ingredient.number}`}
+						{complexIngredient && ingredient[1]}
 					</div>
 				);
 			}),

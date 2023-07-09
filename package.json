@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start:web": "cd projects/web && react-scripts start",
-    "start:api": "cd projects/api && node index.js",
+    "start:web": "cd projects/web && npm run start",
+    "start:api": "cd projects/api && npm run start",
     "check-formatting": "prettier projects",
     "fix-formatting": "prettier --write projects",
     "prepare": "husky install"

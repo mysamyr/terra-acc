@@ -4,8 +4,8 @@ import TextArea from "../../components/input/TextArea";
 import RadioInput from "../../components/input/RadioInput";
 import ImageInput from "../../components/input/ImageInput";
 import RecipesInput from "./components/RecipesInput";
-import ListInput from "./components/ListInput";
-import { validateAddAccessory } from "../../helper";
+import ListInput from "./components/ListInput/ListInput";
+import { validateAddAccessory } from "../../helpers";
 import SnackbarContext from "../../components/store/snackbar-context";
 import { TYPES } from "../../constants";
 
@@ -21,7 +21,7 @@ const AddAccessory = () => {
 	const [type, setType] = useState(TYPES.ACCESSORY);
 	const [usedIn, setUsedIn] = useState([]);
 	const [recipes, setRecipes] = useState([]);
-	const [categories, setCategories] = useState([]);
+	const [categories, setCategories] = useState([""]);
 
 	const handleSave = (e) => {
 		e.preventDefault();
@@ -125,7 +125,9 @@ const AddAccessory = () => {
 			<TextInput header="Obtain from" reference={obtainRef} />
 			<ListInput header="Category" list={categories} setList={setCategories} />
 
-			<button onClick={handleSave}>SAVE</button>
+			<button className="button" onClick={handleSave}>
+				SAVE
+			</button>
 		</div>
 	);
 };

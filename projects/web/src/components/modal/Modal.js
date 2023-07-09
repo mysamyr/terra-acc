@@ -1,11 +1,16 @@
 import { useEffect, useCallback } from "react";
+import {
+	EVENT_NAMES,
+	KEYBOARD_CODES,
+	MODAL_WRAPPER_CLASS_NAME,
+} from "../../constants";
 
 import "./Modal.css";
 
 const Modal = ({ onHideModal, children }) => {
 	const handleClickModalWrapper = useCallback(
 		(e) => {
-			if (e.target.className === "modal-wrapper") {
+			if (e.target.className === MODAL_WRAPPER_CLASS_NAME) {
 				onHideModal();
 			}
 		},
@@ -14,7 +19,7 @@ const Modal = ({ onHideModal, children }) => {
 
 	const handleKeyDown = useCallback(
 		(e) => {
-			if (e.code === "Escape") {
+			if (e.code === KEYBOARD_CODES.ESC) {
 				onHideModal();
 			}
 		},
@@ -22,10 +27,11 @@ const Modal = ({ onHideModal, children }) => {
 	);
 
 	useEffect(() => {
-		document.addEventListener("keydown", handleKeyDown);
-
+		document.addEventListener(EVENT_NAMES.KEYDOWN, handleKeyDown);
+		document.body.classList.add("modal-open");
 		return () => {
-			document.removeEventListener("keydown", handleKeyDown);
+			document.removeEventListener(EVENT_NAMES.KEYDOWN, handleKeyDown);
+			document.body.classList.remove("modal-open");
 		};
 	}, []);
 
@@ -33,7 +39,7 @@ const Modal = ({ onHideModal, children }) => {
 		<div className="modal-wrapper" onClick={handleClickModalWrapper}>
 			<div className="modal">
 				{children}
-				<button id="close" onClick={onHideModal}>
+				<button className="icon-button close-modal" onClick={onHideModal}>
 					&times;
 				</button>
 			</div>

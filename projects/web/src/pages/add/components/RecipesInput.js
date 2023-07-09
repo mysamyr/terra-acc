@@ -2,6 +2,7 @@ import { v4 } from "uuid";
 import accessories from "../../../store/store.json";
 import { TYPES } from "../../../constants";
 
+// todo
 const RecipesInput = ({ header, recipes, setRecipes }) => {
 	const stations = Object.values(accessories)
 		.filter((i) => i.type === TYPES.STATION)
@@ -58,17 +59,10 @@ const RecipesInput = ({ header, recipes, setRecipes }) => {
 				/>
 			</label>
 			<div
-				style={{
-					width: 20,
-					padding: 2,
-					textAlign: "center",
-					backgroundColor: "#fbb",
-					color: "red",
-					cursor: "pointer",
-				}}
+				className="icon-button remove-row"
 				onClick={() => onClickDeleteRow(index)}
 			>
-				X
+				&times;
 			</div>
 		</div>
 	));
@@ -77,18 +71,7 @@ const RecipesInput = ({ header, recipes, setRecipes }) => {
 		<div style={{ width: "50%" }}>
 			<h2>{header}</h2>
 			{inputs}
-			<div
-				style={{
-					width: 20,
-					padding: 2,
-					margin: "0 auto",
-					textAlign: "center",
-					backgroundColor: "#a2e090",
-					color: "green",
-					cursor: "pointer",
-				}}
-				onClick={onClickAddRow}
-			>
+			<div className="icon-button add-row" onClick={onClickAddRow}>
 				+
 			</div>
 			<datalist id="stations">{stations}</datalist>
