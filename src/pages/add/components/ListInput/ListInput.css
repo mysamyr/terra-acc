@@ -1,11 +1,11 @@
 .add-row {
-	margin: 0 auto;
-	text-align: center;
-	background-color: #a2e090;
-	color: green;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #a2e090;
+  color: green;
 }
 .remove-row {
-	text-align: center;
-	color: red;
-	background-color: #fbb;
+  text-align: center;
+  color: red;
+  background-color: #fbb;
 }

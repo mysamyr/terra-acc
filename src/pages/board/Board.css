@@ -1,15 +1,15 @@
 .container {
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1080px;
-	background-color: var(--content-bg);
-	color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  background-color: var(--content-bg);
+  color: var(--font-color);
 }
 
 .categories {
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
 }

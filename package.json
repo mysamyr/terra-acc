@@ -2,32 +2,42 @@
   "name": "terra-acc",
   "version": "1.0.0",
   "description": "",
+  "main": "src/index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "check-formatting": "prettier ./",
-    "fix-formatting": "prettier --write ./",
-    "prepare": "husky install"
+    "lint": "npx eslint .",
+    "check-formatting": "npx prettier -l \"**/*.{js,json,css,md}\"",
+    "fix-formatting": "npx prettier --write \"**/*.{js,json,css,md}\"",
+    "prepare": "husky"
   },
-  "repository": {},
-  "keywords": [],
+  "type": "module",
+  "keywords": ["terraria", "accessories"],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.12.1",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2",
     "react-scripts": "^5.0.1",
-    "uuid": "^9.0.0",
-    "husky": "^8.0.3",
-    "prettier": "^3.0.0"
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.6.2"
+  },
+  "lint-staged": {
+    "*.{json,css,md}": ["npm run check-formatting", "npm run lint"]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

@@ -1,9 +1,9 @@
 .category h3 {
-	padding: 0 48px;
+  padding: 0 48px;
 }
 
 .category-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

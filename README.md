@@ -3,7 +3,6 @@ TODO
 - Add dev wings
 - Add extended search (optional)
 - Make normal acc adder
-
   - id - name in snake case ("") \*
   - name - name of acc ("") \*
   - path - relative path to img ("${id}.png") \*

@@ -1,7 +1,7 @@
-**/*.json
-node_modules
+.husky/
+node_modules/
 /public
 /build
-.env
-.env.example
-.gitignore
+package-lock.json
+**/*.yml
+**/*.log

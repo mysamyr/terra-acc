@@ -1,26 +1,26 @@
 .snackbar-container {
-	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
-	display: flex;
-	align-items: center;
-	background: var(--font-color);
-	color: var(--white);
-	z-index: 2;
-	border-radius: 10px;
-	min-width: 21rem;
-	max-width: 42rem;
-	padding: 0.5rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  background: var(--font-color);
+  color: var(--white);
+  z-index: 2;
+  border-radius: 10px;
+  min-width: 21rem;
+  max-width: 42rem;
+  padding: 0.5rem;
 }
 
 .snackbar-label {
-	width: 100%;
-	padding: 14px 8px 14px 16px;
+  width: 100%;
+  padding: 14px 8px 14px 16px;
 }
 
 .snackbar-dismiss {
-	font-size: 120%;
-	font-weight: bold;
-	cursor: pointer;
-	padding: 0.5rem 1rem;
+  font-size: 120%;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
 }
