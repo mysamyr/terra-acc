@@ -1,6 +1,6 @@
 import { v4 } from 'uuid';
-import { IMG_PATH } from '../../../../constants';
-import Recipe from '../recipe';
+import { IMG_PATH } from '../../../../constants/index.js';
+import Recipe from '../recipe/index.js';
 
 import './ItemDetails.css';
 

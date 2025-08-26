@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { v4 } from 'uuid';
-import Item from '../item';
+import Item from '../Item/index.js';
 
 const Recipe = ({
   recipe,

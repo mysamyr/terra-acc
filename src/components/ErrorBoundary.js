@@ -4,7 +4,7 @@ class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      error: false,
+      isError: false,
     };
   }
 
@@ -12,12 +12,12 @@ class ErrorBoundary extends Component {
     // eslint-disable-next-line no-console
     console.log(err, errInfo);
     this.setState({
-      error: true,
+      isError: true,
     });
   }
 
   render() {
-    if (this.state.error) {
+    if (this.state.isError) {
       return <h2>Something went wrong</h2>;
     }
 

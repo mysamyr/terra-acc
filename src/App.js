@@ -1,14 +1,11 @@
 import { useContext } from 'react';
-import { Routes, Route } from 'react-router-dom';
-
-import Board from '../../pages/board';
-import AddAccessory from '../../pages/add';
-import NavBar from '../navbar';
-import Snackbar from '../snackbar';
-import SnackbarContext from '../store/snackbar-context';
-import { BOARD_CONFIGS } from '../../enums';
-
-import './App.css';
+import { Routes, Route } from 'react-router';
+import Board from './pages/board/index.js';
+import AddAccessory from './pages/add/index.js';
+import NavBar from './components/Navbar/index.js';
+import Snackbar from './components/Snackbar/index.js';
+import SnackbarContext from './components/Snackbar/context.js';
+import { BOARD_CONFIGS } from './enums/index.js';
 
 const App = () => {
   const snackbarCtx = useContext(SnackbarContext);

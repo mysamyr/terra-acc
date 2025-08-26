@@ -17,6 +17,13 @@
   font-family: 'Open Sans', serif;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  min-height: 100vh;
+}
+
 /* hide scrollbar */
 body {
   -ms-overflow-style: none;
@@ -28,13 +35,13 @@ body::-webkit-scrollbar {
 
 h1 {
   color: var(--font-color);
-  font-size: 24px;
+  font-size: 28px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 24px;
 }
 h3 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .button {

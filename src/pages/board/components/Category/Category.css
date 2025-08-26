@@ -1,3 +1,10 @@
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .category h3 {
   padding: 0 48px;
 }

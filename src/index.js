@@ -1,10 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-
-import App from './components/app';
-import ErrorBoundary from './components/errorBoundary';
-import { SnackBarContextProvider } from './components/store/snackbar-context';
+import { BrowserRouter } from 'react-router';
+import App from './App.js';
+import ErrorBoundary from './components/ErrorBoundary.js';
+import { SnackBarContextProvider } from './components/Snackbar/context.js';
 
 import './index.css';
 

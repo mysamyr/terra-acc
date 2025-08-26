@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from 'react';
-import { IMG_PATH } from '../../../../constants';
+import { IMG_PATH } from '../../../../constants/index.js';
 
 import './Item.css';
 

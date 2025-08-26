@@ -6,19 +6,19 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "npx eslint .",
     "check-formatting": "npx prettier -l \"**/*.{js,json,css,md}\"",
     "fix-formatting": "npx prettier --write \"**/*.{js,json,css,md}\"",
+    "lint": "npx eslint .",
     "prepare": "husky"
   },
   "type": "module",
   "keywords": ["terraria", "accessories"],
-  "author": "",
+  "author": "Mysamyr",
   "license": "ISC",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.8.2",
+    "react-router": "^7.8.2",
     "react-scripts": "^5.0.1",
     "uuid": "^11.1.0"
   },

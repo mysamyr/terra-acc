@@ -1,7 +1,7 @@
 import { v4 } from 'uuid';
 import accessories from '../../../store/store.json';
-import { TYPES } from '../../../constants';
-import { objToArr } from '../../../helpers';
+import { TYPES } from '../../../constants/index.js';
+import { objToArr } from '../../../helpers/index.js';
 
 // todo
 const RecipesInput = ({ header, recipes, setRecipes }) => {

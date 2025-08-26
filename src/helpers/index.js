@@ -1,4 +1,4 @@
-import { TYPES } from '../constants';
+import { TYPES } from '../constants/index.js';
 
 export const objToArr = obj => Object.values(obj);
 

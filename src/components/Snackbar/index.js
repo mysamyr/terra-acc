@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import SnackbarContext from '../store/snackbar-context';
+import SnackbarContext from '../Snackbar/context.js';
 
 import './Snackbar.css';
 

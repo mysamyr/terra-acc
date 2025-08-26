@@ -1,13 +1,13 @@
 import { useCallback, useContext, useMemo, useRef, useState } from 'react';
-import TextInput from '../../components/input/TextInput';
-import TextArea from '../../components/input/TextArea';
-import RadioInput from '../../components/input/RadioInput';
-import ImageInput from '../../components/input/ImageInput';
-import RecipesInput from './components/RecipesInput';
-import ListInput from './components/ListInput/ListInput';
-import { validateAddAccessory } from '../../helpers';
-import SnackbarContext from '../../components/store/snackbar-context';
-import { TYPES } from '../../constants';
+import TextInput from '../../components/inputs/TextInput.js';
+import TextArea from '../../components/inputs/TextArea.js';
+import RadioInput from '../../components/inputs/RadioInput.js';
+import ImageInput from '../../components/inputs/ImageInput.js';
+import RecipesInput from './components/RecipesInput.js';
+import ListInput from './components/ListInput/ListInput.js';
+import { validateAddAccessory } from '../../helpers/index.js';
+import SnackbarContext from '../../components/Snackbar/context.js';
+import { TYPES } from '../../constants/index.js';
 
 import './AddAccessory.css';
 

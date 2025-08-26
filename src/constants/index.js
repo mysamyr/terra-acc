@@ -21,8 +21,3 @@ export const KEYBOARD_CODES = {
 export const EVENT_NAMES = {
   KEYDOWN: 'keydown',
 };
-
-export const ICON_CODES = {
-  CLOSE: '&times;',
-  SEARCH: '&#x1F50E;&#xFE0E;',
-};

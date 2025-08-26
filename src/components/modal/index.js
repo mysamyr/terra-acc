@@ -1,5 +1,9 @@
 import { useEffect, useCallback } from 'react';
-import { EVENT_NAMES, KEYBOARD_CODES, CLASS_NAMES } from '../../constants';
+import {
+  EVENT_NAMES,
+  KEYBOARD_CODES,
+  CLASS_NAMES,
+} from '../../constants/index.js';
 
 import './Modal.css';
 

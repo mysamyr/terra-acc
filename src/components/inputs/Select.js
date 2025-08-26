@@ -1,8 +1,8 @@
 import { useCallback, useMemo } from 'react';
-import { TYPES } from '../../constants';
+import { TYPES } from '../../constants/index.js';
+import { objToArr } from '../../helpers';
 
 import './Select.css';
-import { objToArr } from '../../helpers';
 
 const Select = ({ header, accessories, usedIn, setUsedIn }) => {
   const usedInString = [...usedIn].join(', ');
